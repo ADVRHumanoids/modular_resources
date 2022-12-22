@@ -70,7 +70,7 @@ visual:
     body_1:
         type: mesh
         parameters:
-            file: package://modular/src/modular/modular_resources/models/modular/meshes/concert/concert_steering_connection_module.stl
+            file: package://modular_resources/models/modular/meshes/concert/concert_steering_connection_module.stl
             scale: [0.001, 0.001, 0.001]
         pose:
             x: 0.0
@@ -83,7 +83,7 @@ visual:
     body_2:
         type: mesh
         parameters:
-            file: package://modular/src/modular/modular_resources/models/modular/meshes/concert/concert_steering_module_frame.stl
+            file: package://modular_resources/models/modular/meshes/concert/concert_steering_module_frame.stl
             scale: [0.001, 0.001, 0.001]
         pose:
             x: 0.0
@@ -97,7 +97,7 @@ collision:
     body_1:
         type: mesh
         parameters:
-            file: package://modular/src/modular/modular_resources/models/modular/meshes/concert/simple/concert_steering_connection_module.stl
+            file: package://modular_resources/models/modular/meshes/concert/simple/concert_steering_connection_module.stl
             scale: [0.001, 0.001, 0.001]
         pose:
             x: 0.0
@@ -109,7 +109,7 @@ collision:
     body_2:
         type: mesh
         parameters:
-            file: package://modular/src/modular/modular_resources/models/modular/meshes/concert/simple/concert_steering_module_frame.stl
+            file: package://modular_resources/models/modular/meshes/concert/simple/concert_steering_module_frame.stl
             scale: [0.001, 0.001, 0.001]
         pose:
             x: 0.0

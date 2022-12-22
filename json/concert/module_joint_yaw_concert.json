@@ -23,7 +23,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/concert_yaw-base.stl",
+            "file": "package://modular_resources/models/modular/meshes/concert/concert_yaw-base.stl",
             "scale": [0.001, 0.001, 0.001]
           },
           "pose": [
@@ -38,7 +38,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/simple/concert_yaw-base.stl",
+            "file": "package://modular_resources/models/modular/meshes/concert/simple/concert_yaw-base.stl",
             "scale": [0.001, 0.001, 0.001]
           },
           "pose": [
@@ -89,7 +89,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/concert_yaw-link.stl",
+            "file": "package://modular_resources/models/modular/meshes/concert/concert_yaw-link.stl",
             "scale": [0.001, 0.001, 0.001]
           },
           "pose": [
@@ -104,7 +104,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/simple/concert_yaw-link.stl",
+            "file": "package://modular_resources/models/modular/meshes/concert/simple/concert_yaw-link.stl",
             "scale": [0.001, 0.001, 0.001]
           },
           "pose": [

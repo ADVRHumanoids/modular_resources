@@ -23,7 +23,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/concert_elbow-base.stl",
+            "file": "package://modular_resources/models/modular/meshes/concert/concert_elbow-base.stl",
             "scale": [0.001, 0.001, 0.001]
           },
           "pose": [
@@ -38,7 +38,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/simple/concert_elbow-base.stl",
+            "file": "package://modular_resources/models/modular/meshes/concert/simple/concert_elbow-base.stl",
             "scale": [0.001, 0.001, 0.001]
           },
           "pose": [
@@ -89,7 +89,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/concert_elbow-link.stl",
+            "file": "package://modular_resources/models/modular/meshes/concert/concert_elbow-link.stl",
             "scale": [0.001, 0.001, 0.001]
           },
           "pose": [
@@ -104,7 +104,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular/src/modular/modular_resources/models/modular/meshes/concert/simple/concert_elbow-link.stl",
+            "file": "package://modular_resources/models/modular/meshes/concert/simple/concert_elbow-link.stl",
             "scale": [0.001, 0.001, 0.001]
           },
           "pose": [

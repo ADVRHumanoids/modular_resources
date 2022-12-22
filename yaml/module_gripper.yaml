@@ -69,8 +69,8 @@ dynamics:
             y: 0.0
             z: 0.0
 visual:
-    mesh_body_1: package://modular/src/modular/modular_resources/models/modular/meshes/alberobotics/gripper_outer_assembly_simplified.stl
-    mesh_collision_1: package://modular/src/modular/modular_resources/models/modular/meshes/alberobotics/simple/gripper_outer_assembly_simplified.stl
+    mesh_body_1: package://modular_resources/models/modular/meshes/alberobotics/gripper_outer_assembly_simplified.stl
+    mesh_collision_1: package://modular_resources/models/modular/meshes/alberobotics/simple/gripper_outer_assembly_simplified.stl
     tf_mesh_1:
         x: 0.0
         y: 0.0
@@ -78,8 +78,8 @@ visual:
         roll: 0.0
         pitch: 0.0
         yaw: 0.0
-    mesh_body_2: package://modular/src/modular/modular_resources/models/modular/meshes/alberobotics/fingerup_7_raised.stl
-    mesh_collision_2: package://modular/src/modular/modular_resources/models/modular/meshes/alberobotics/simple/fingerup_7_raised.stl
+    mesh_body_2: package://modular_resources/models/modular/meshes/alberobotics/fingerup_7_raised.stl
+    mesh_collision_2: package://modular_resources/models/modular/meshes/alberobotics/simple/fingerup_7_raised.stl
     tf_mesh_2:
         x: 0.0
         y: 0.0
