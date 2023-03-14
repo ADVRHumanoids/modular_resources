@@ -130,6 +130,7 @@ CentAcESC:
     sign: 1
     pos_offset: 0
     max_current_A: 20.0
+    motor_has_brake: false
     pid:
         position:
         - 1000.0
