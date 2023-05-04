@@ -46,33 +46,35 @@ size: big
 type: cube
 visual:
     body_1:
-        type: mesh
-        parameters:
-            file: package://modular_resources/models/modular/meshes/alberobotics/space_cube.stl
-            scale: [0.001, 0.001, 0.001]
-        pose:
-            x: 0.0
-            y: 0.0
-            z: 0.17
-            roll: 0.0
-            pitch: 0.0
-            yaw: 0.0
-        color: ''
-    body_2: null
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/space_cube.stl
+                scale: [0.001, 0.001, 0.001]
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.17
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
+            color: ''
+    body_2: []
 collision:
     body_1:
-        type: mesh
-        parameters:
-            file: package://modular_resources/models/modular/meshes/alberobotics/space_cube.stl
-            scale: [0.001, 0.001, 0.001]
-        pose:
-            x: 0.0
-            y: 0.0
-            z: 0.0
-            roll: 0.0
-            pitch: 0.0
-            yaw: 0.0
-    body_2: null
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/space_cube.stl
+                scale: [0.001, 0.001, 0.001]
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.0
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
+    body_2: []
 gazebo:
     body_1:
         mu1: 0.2

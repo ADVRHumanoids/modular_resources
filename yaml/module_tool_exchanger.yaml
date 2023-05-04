@@ -43,32 +43,34 @@ dynamics:
             z: 0.046
 visual:
     body_1:
-        type: mesh
-        parameters:
-            file: package://modular_resources/models/modular/meshes/alberobotics/tool_exchanger.stl
-            scale: [0.001, 0.001, 0.001]
-            color: tree_green
-        pose:
-            x: 0.0
-            y: 0.0
-            z: 0.0
-            roll: 0.0
-            pitch: 0.0
-            yaw: 0.0
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/tool_exchanger.stl
+                scale: [0.001, 0.001, 0.001]
+                color: tree_green
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.0
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
 collision:
     body_1: 
-        type: mesh
-        parameters:
-            file: package://modular_resources/models/modular/meshes/alberobotics/tool_exchanger.stl
-            scale: [0.001, 0.001, 0.001]
-            color: tree_green
-        pose:
-            x: 0.0
-            y: 0.0
-            z: 0.0
-            roll: 0.0
-            pitch: 0.0
-            yaw: 0.0
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/tool_exchanger.stl
+                scale: [0.001, 0.001, 0.001]
+                color: tree_green
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.0
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
 size: big
 size_in: null
 size_out: null

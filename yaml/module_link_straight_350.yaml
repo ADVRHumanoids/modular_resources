@@ -24,31 +24,33 @@ dynamics:
             z: 0.175
 visual:
     body_1:
-        type: mesh
-        parameters:
-            file: package://modular_resources/models/modular/meshes/alberobotics/passive_link_straight_350.stl
-            scale: [0.001, 0.001, 0.001]
-        pose:
-            x: 0.0
-            y: 0.0
-            z: 0.0
-            roll: 0.0
-            pitch: 0.0
-            yaw: 0.0
-        color: grey
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/passive_link_straight_350.stl
+                scale: [0.001, 0.001, 0.001]
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.0
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
+            color: grey
 collision:
     body_1:
-        type: mesh
-        parameters:
-            file: package://modular_resources/models/modular/meshes/alberobotics/passive_link_straight_350.stl
-            scale: [0.001, 0.001, 0.001]
-        pose:
-            x: 0.0
-            y: 0.0
-            z: 0.0
-            roll: 0.0
-            pitch: 0.0
-            yaw: 0.0
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/passive_link_straight_350.stl
+                scale: [0.001, 0.001, 0.001]
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.0
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
 size: big
 size_in: null
 size_out: null

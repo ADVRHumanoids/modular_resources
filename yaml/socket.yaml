@@ -24,31 +24,33 @@ dynamics:
             z: 0.035
 visual:
     body_1:
-        type: mesh
-        parameters:
-            file: package://modular_resources/models/modular/meshes/alberobotics/module_base_mesh.stl
-            scale: [0.001, 0.001, 0.001]
-        pose:
-            x: 0.0
-            y: 0.0
-            z: 0.06
-            roll: 0.0
-            pitch: 0.0
-            yaw: 0.0
-        color: tree_green
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/module_base_mesh.stl
+                scale: [0.001, 0.001, 0.001]
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.06
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
+            color: tree_green
 collision:
     body_1:
-        type: cylinder
-        parameters:
-            radius: 0.045
-            length: 0.06
-        pose:
-            x: 0.0
-            y: 0.0
-            z: 0.03
-            roll: 0.0
-            pitch: 0.0
-            yaw: 0.0
+        -
+            type: cylinder
+            parameters:
+                radius: 0.045
+                length: 0.06
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.03
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
 size: big
 size_in: null
 size_out: null
