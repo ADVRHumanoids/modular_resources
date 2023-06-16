@@ -48,6 +48,7 @@ collision:
     body_2: []
 size: {}
 xbot_gz: null
+joint_gripper_adapter: null
 CentAcESC:
     control_mode: null
     pid:
