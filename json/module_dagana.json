@@ -44,8 +44,8 @@
                 },
                 "joint_gripper_adapter": {
                     "joint_type": {"value": "joint_ec", "type": "string"},
-                    "qopen": {"value": -0.4, "type": "double"},
-                    "qclosed": {"value": 0.6, "type": "double"},
+                    "qopen": {"value": 0.0, "type": "double"},
+                    "qclosed": {"value": 1.0, "type": "double"},
                     "vmax": {"value": 1.0, "type": "double"},
                     "stiffness": {"value": 50.0, "type": "double"}
                 }
