@@ -48,7 +48,8 @@ visual:
             parameters:
                 file: package://modular_resources/models/modular/meshes/alberobotics/tool_exchanger.stl
                 scale: [0.001, 0.001, 0.001]
-                color: tree_green
+                color: 
+                material_name: tree_green
             pose:
                 x: 0.0
                 y: 0.0
@@ -63,7 +64,8 @@ collision:
             parameters:
                 file: package://modular_resources/models/modular/meshes/alberobotics/tool_exchanger.stl
                 scale: [0.001, 0.001, 0.001]
-                color: tree_green
+                color: 
+                material_name: tree_green
             pose:
                 x: 0.0
                 y: 0.0

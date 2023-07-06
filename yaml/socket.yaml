@@ -36,7 +36,8 @@ visual:
                 roll: 0.0
                 pitch: 0.0
                 yaw: 0.0
-            color: tree_green
+            color: 
+                material_name: tree_green
 collision:
     body_1:
         -
