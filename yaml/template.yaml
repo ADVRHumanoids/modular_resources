@@ -41,13 +41,14 @@ dynamics:
             y: null
             z: null
 visual:
-    body_1: {}
-    body_2: {}
+    body_1: []
+    body_2: []
 collision:
-    body_1: {}
-    body_2: {}
+    body_1: []
+    body_2: []
 size: {}
 xbot_gz: null
+joint_gripper_adapter: null
 CentAcESC:
     control_mode: null
     pid:

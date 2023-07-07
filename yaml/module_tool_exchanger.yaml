@@ -41,51 +41,38 @@ dynamics:
             x: 0.007
             y: 0.0
             z: 0.046
-    body_2:
-        mass: 0.0
-        inertia_tensor:
-            I_xx: 0.0
-            I_yy: 0.0
-            I_zz: 0.0
-            I_xy: 0.0
-            I_xz: 0.0
-            I_yz: 0.0
-        CoM:
-            x: 0.0
-            y: 0.0
-            z: 0.0
-    body_2_fast:
-        mass: 0.0
-        inertia_tensor:
-            I_xx: 0.0
-            I_yy: 0.0
-            I_zz: 0.0
-            I_xy: 0.0
-            I_xz: 0.0
-            I_yz: 0.0
-        CoM:
-            x: 0.0
-            y: 0.0
-            z: 0.0
 visual:
-    mesh_body_1: package://modular_resources/models/modular/meshes/alberobotics/tool_exchanger.stl
-    mesh_collision_1: package://modular_resources/models/modular/meshes/alberobotics/tool_exchanger.stl
-    tf_mesh_1:
-        x: 0.0
-        y: 0.0
-        z: 0.0
-        roll: 0.0
-        pitch: 0.0
-        yaw: 0.0
-    mesh_body_2: ''
-    mesh_collision_2: ''
-    tf_mesh_2:
-        x: 0.0
-        y: 0.0
-        z: 0.0
-        roll: 0.0
-        pitch: 0.0
-        yaw: 0.0
+    body_1:
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/tool_exchanger.stl
+                scale: [0.001, 0.001, 0.001]
+                color: 
+                material_name: tree_green
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.0
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
+collision:
+    body_1: 
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/tool_exchanger.stl
+                scale: [0.001, 0.001, 0.001]
+                color: 
+                material_name: tree_green
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.0
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
 size: big
 size_in: null
 size_out: null

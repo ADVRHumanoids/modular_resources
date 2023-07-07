@@ -70,56 +70,62 @@ dynamics:
             z: -0.0978986
 visual:
     body_1:
-        type: mesh
-        parameters:
-            file: package://modular_resources/models/modular/meshes/alberobotics/elbow_base.stl
-            scale: [0.001, 0.001, 0.001]
-        pose:
-            x: 0.0
-            y: 0.0
-            z: 0.0
-            roll: 0.0
-            pitch: 0.0
-            yaw: 0.0
-        color: tree_green
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/elbow_base.stl
+                scale: [0.001, 0.001, 0.001]
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.0
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
+            color: 
+                material_name: tree_green
     body_2:
-        type: mesh
-        parameters:
-            file: package://modular_resources/models/modular/meshes/alberobotics/elbow_link.stl
-            scale: [0.001, 0.001, 0.001]
-        pose:
-            x: 0.0
-            y: 0.0
-            z: -0.072
-            roll: 0.0
-            pitch: 3.14
-            yaw: 0.0
-        color: tree_green
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/elbow_link.stl
+                scale: [0.001, 0.001, 0.001]
+            pose:
+                x: 0.0
+                y: 0.0
+                z: -0.072
+                roll: 0.0
+                pitch: 3.14
+                yaw: 0.0
+            color: 
+                material_name: tree_green
 collision:
     body_1:
-        type: mesh
-        parameters:
-            file: package://modular_resources/models/modular/meshes/alberobotics/simple/elbow_base.stl
-            scale: [0.001, 0.001, 0.001]
-        pose:
-            x: 0.0
-            y: 0.0
-            z: 0.0
-            roll: 0.0
-            pitch: 0.0
-            yaw: 0.0
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/simple/elbow_base.stl
+                scale: [0.001, 0.001, 0.001]
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.0
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
     body_2:
-        type: mesh
-        parameters:
-            file: package://modular_resources/models/modular/meshes/alberobotics/simple/elbow_link.stl
-            scale: [0.001, 0.001, 0.001]
-        pose:
-            x: 0.0
-            y: 0.0
-            z: -0.072
-            roll: 0.0
-            pitch: 3.14
-            yaw: 0.0
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/simple/elbow_link.stl
+                scale: [0.001, 0.001, 0.001]
+            pose:
+                x: 0.0
+                y: 0.0
+                z: -0.072
+                roll: 0.0
+                pitch: 3.14
+                yaw: 0.0
 size: big
 size_in: null
 size_out: null
@@ -130,6 +136,7 @@ CentAcESC:
     sign: 1
     pos_offset: 0
     max_current_A: 30.0
+    motor_has_brake: false
     pid:
         position:
         - 1000.0
