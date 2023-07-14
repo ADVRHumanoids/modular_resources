@@ -52,7 +52,7 @@ collision:
                 roll: 0.0
                 pitch: 0.0
                 yaw: 0.0
-size: big
+flange_size: big
 size_in: null
 size_out: null
 type: link
