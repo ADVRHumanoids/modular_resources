@@ -46,7 +46,7 @@ visual:
 collision:
     body_1: []
     body_2: []
-size: {}
+flange_size: {}
 xbot_gz: null
 joint_gripper_adapter: null
 CentAcESC:

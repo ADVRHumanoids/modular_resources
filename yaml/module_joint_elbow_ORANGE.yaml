@@ -87,7 +87,7 @@ visual:
         yaw: 0.0
     mesh_collision_1: ''
     mesh_collision_2: ''
-size: big
+flange_size: big
 size_in: null
 size_out: null
 type: joint
