@@ -29,6 +29,8 @@ visual:
             parameters:
                 file: package://modular_resources/models/modular/meshes/alberobotics/passive_link_straight_350.stl
                 scale: [0.001, 0.001, 0.001]
+                color: 
+                    material_name: grey
             pose:
                 x: 0.0
                 y: 0.0
@@ -36,8 +38,7 @@ visual:
                 roll: 0.0
                 pitch: 0.0
                 yaw: 0.0
-            color: 
-                material_name: grey
+            
 collision:
     body_1:
         -

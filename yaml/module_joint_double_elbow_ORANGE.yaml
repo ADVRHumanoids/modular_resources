@@ -75,6 +75,8 @@ visual:
             parameters:
                 file: package://modular_resources/models/modular/meshes/alberobotics/elbow_base.stl
                 scale: [0.001, 0.001, 0.001]
+                color: 
+                    material_name: tree_green
             pose:
                 x: 0.0
                 y: 0.0
@@ -82,14 +84,15 @@ visual:
                 roll: 0.0
                 pitch: 0.0
                 yaw: 0.0
-            color: 
-                material_name: tree_green
+            
     body_2:
         -
             type: mesh
             parameters:
                 file: package://modular_resources/models/modular/meshes/alberobotics/elbow_link.stl
                 scale: [0.001, 0.001, 0.001]
+                color: 
+                    material_name: tree_green
             pose:
                 x: 0.0
                 y: 0.0
@@ -97,8 +100,7 @@ visual:
                 roll: 0.0
                 pitch: 3.14
                 yaw: 0.0
-            color: 
-                material_name: tree_green
+            
 collision:
     body_1:
         -
