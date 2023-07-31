@@ -42,7 +42,7 @@ dynamics:
             x: null
             y: null
             z: null
-size: big
+flange_size: big
 type: cube
 visual:
     body_1:
