@@ -1,3 +1,15 @@
+header:
+    ID": "3120"
+    name: "module_tool_exchanger_heavy.yaml"
+    date: "2023-10-12"
+    author: "EdaordoRomiti"
+    affiliation: "IIT"
+    email: "edoardo.romiti@iit.it"
+    cost: 0
+    type: "tool_exchanger"
+    family: "alberoboticsGenA"
+    label: "Tool Exchanger"
+    disabled: False
 kinematics_convention: DH_ext
 kinematics:
     joint:
