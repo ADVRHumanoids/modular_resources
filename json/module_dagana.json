@@ -1,13 +1,16 @@
 {
     "header": {
-      "ID": "342",
-      "name": "dagana_module",
-      "date":"2022-11-16",
-      "author": "EdaordoRomiti",
-      "affiliation": "IIT",
-      "email": "edoardo.romiti@iit.it",
-      "cost": 0,
-      "type": "dagana"
+        "ID": "3420",
+        "name": "dagana_module",
+        "date":"2022-11-16",
+        "author": "EdaordoRomiti",
+        "affiliation": "IIT",
+        "email": "edoardo.romiti@iit.it",
+        "cost": 0,
+        "type": "dagana",
+        "family": "alberoboticsGen0",
+        "label": "Dagana Gripper",
+        "disabled": false
     },
     "bodies": [],
     "joints": [

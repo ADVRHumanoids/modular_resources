@@ -1,3 +1,15 @@
+header:
+    ID": "2120"
+    name: "master_cube.yaml"
+    date: "2023-10-12"
+    author: "EdaordoRomiti"
+    affiliation: "IIT"
+    email: "edoardo.romiti@iit.it"
+    cost: 0
+    type: "cube"
+    family: "alberoboticsGenA"
+    label: "Multi-socket Cube Module"
+    disabled: False
 kinematics_convention: urdf
 kinematics:
     connector_1:

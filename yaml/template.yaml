@@ -1,3 +1,15 @@
+header:
+    ID": null
+    name: null
+    date: null
+    author: null
+    affiliation: null
+    email: null
+    cost: null
+    type: null
+    family: null
+    label: null
+    disabled: True
 type: null
 kinematics_convention: null
 kinematics:
