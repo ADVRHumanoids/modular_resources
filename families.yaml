@@ -1,0 +1,10 @@
+families: 
+    # TREE Modules (disabled)
+    - id: "alberoboticsGen0"
+      group: "Alberobotics"
+      label: "TREE Modules"
+      disabled: True
+    # PINO v1
+    - id: "alberoboticsGenA"
+      group: "Alberobotics"
+      label: "PINO v1"
