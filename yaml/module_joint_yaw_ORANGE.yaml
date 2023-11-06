@@ -39,7 +39,7 @@ actuator_data:
     upper_limit: 2.8
     effort: 147
     velocity: 3.9
-    gear_ratio: 100
+    gear_ratio: 160
 dynamics:
     body_1:
         mass: 2.0554934
