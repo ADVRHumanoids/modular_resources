@@ -1,6 +1,6 @@
 header:
     ID: null
-    name: null
+    name: "template.yaml"
     date: null
     author: null
     affiliation: null
