@@ -18,7 +18,7 @@ kinematics:
         alpha_l: 0.0
         p_l: 0.0
         n_l: 0.06
-        delta_l_in: 0.0
+        delta_l_in: 1.57
         delta_l_out: 0.0
 dynamics:
     body_1:
