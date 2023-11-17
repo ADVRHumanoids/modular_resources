@@ -12,7 +12,8 @@
     "affiliation": [
       "IIT"
     ],
-    "cost": 0.0
+    "cost": 0.0,
+    "type": "joint"
   },
   "bodies": [
     {
