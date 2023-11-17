@@ -9,7 +9,7 @@ header:
     type: "link"
     family: "alberoboticsGenA"
     label: "Passive Link Elbow 135°"
-    disabled: True
+    disabled: False
 kinematics_convention: DH_ext
 kinematics:
     joint: null
