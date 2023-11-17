@@ -16,8 +16,8 @@ kinematics:
     link:
         a_l: 0
         alpha_l: -0.79
-        p_l: 0.083
-        n_l: 0.083
+        p_l: 0.042
+        n_l: 0.042
         delta_l_in: 0
         delta_l_out: 0
 dynamics:

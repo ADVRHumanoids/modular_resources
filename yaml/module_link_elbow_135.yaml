@@ -16,8 +16,8 @@ kinematics:
     link:
         a_l: 0
         alpha_l: -2.36
-        p_l: 0.083
-        n_l: 0.083
+        p_l: 0.182
+        n_l: 0.182
         delta_l_in: 0
         delta_l_out: 0
 dynamics:
@@ -49,7 +49,7 @@ visual:
                 z: 0.0
                 roll: 0.0
                 pitch: 0.0
-                yaw: 0.0
+                yaw: -0.07
             
 collision:
     body_1:
