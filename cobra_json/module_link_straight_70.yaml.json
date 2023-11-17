@@ -1,0 +1,86 @@
+{
+  "header": {
+    "ID": "4122",
+    "name": "module_link_straight_70.yaml",
+    "date": "2023-10-12",
+    "author": [
+      "EdaordoRomiti"
+    ],
+    "email": [
+      "edoardo.romiti@iit.it"
+    ],
+    "affiliation": [
+      "IIT"
+    ],
+    "cost": 0.0
+  },
+  "bodies": [
+    {
+      "ID": "body_1",
+      "mass": 0.76,
+      "inertia": [
+        [ 0.005, 5e-06, 5e-06 ],
+        [ 5e-06, 0.005, 5e-06 ],
+        [ 5e-06, 5e-06, 0.002 ]
+      ],
+      "r_com": [ 0.0, 0.0, 0.035 ],
+      "connectors": [
+        {
+          "ID": "4122_in",
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, -1.0, -0.0, 0.0 ],
+            [ 0.0, 0.0, -1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ],
+          "gender": "f",
+          "type": "big",
+          "size": []
+        },
+        {
+          "ID": "4122_out",
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.07 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ],
+          "gender": "m",
+          "type": "big",
+          "size": []
+        }
+      ],
+      "visual": [
+        {
+          "type": "mesh",
+          "parameters": {
+            "file": "alberobotics/passive_link_straight_70.stl",
+            "scale": [ 0.001, 0.001, 0.001 ]
+          },
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ]
+        }
+      ],
+      "collision": [
+        {
+          "type": "mesh",
+          "parameters": {
+            "file": "alberobotics/passive_link_straight_70.stl",
+            "scale": [ 0.001, 0.001, 0.001 ]
+          },
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ]
+        }
+      ]
+    }
+  ],
+  "joints": []
+}

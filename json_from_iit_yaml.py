@@ -51,8 +51,6 @@ def dh_ext_from_dict(d: Dict) -> Transformation:
         args['delta'] = d.pop('delta_pl')
     elif 'delta_l_in' in keys and 'delta_l_out' in keys:
         args['delta'] = d.pop('delta_l_in') + d.pop('delta_l_out')
-        if not args['delta'] == 0:
-            print('DEBUG')
     return dh_ext(**args)
 
 
@@ -178,16 +176,19 @@ def make_module(d: Dict) -> AtomicModule:
 
 
 def main():
-    db = ModulesDB(name='modularbot_fhi')
+    db = ModulesDB(name='modular_resources')  # The name must match the repository name
     for file in module_data.rglob('*.yaml'):
         if file.name in ('master_cube.yaml', 'template.yaml', 'module_joint_elbow_ORANGE.yaml',
                          'module_tool_exchanger.yaml', 'module_tool_exchanger_heavy.yaml'):
             continue
         with file.open('r') as f:
             content = yaml_lib.safe_load(f)
-        db.add(make_module(content))
+        new_module = make_module(content)
+        new_module.to_json_file(head.joinpath(f'cobra_json/{new_module.name}.json'), handle_missing_assets='symlink')
+        db.add(new_module)
     db.debug_visualization()
-    input('Press enter to continue...')
+    db.to_json_file(head.joinpath('modules.json'))
+    input('Press enter to quit...')
 
 
 if __name__ == '__main__':
