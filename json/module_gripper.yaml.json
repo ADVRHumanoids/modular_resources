@@ -13,7 +13,8 @@
       "IIT"
     ],
     "cost": 0.0,
-    "type": "gripper"
+    "type": "gripper",
+    "family": "alberoboticsGenA-TUM"
   },
   "bodies": [
     {

@@ -13,7 +13,8 @@
       "IIT"
     ],
     "cost": 0.0,
-    "type": "joint"
+    "type": "joint",
+    "family": "alberoboticsGenA-TUM"
   },
   "bodies": [
     {
