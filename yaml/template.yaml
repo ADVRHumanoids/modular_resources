@@ -10,6 +10,8 @@ header:
     family: null
     label: null
     disabled: True
+    offsets: {}
+    reversible: False
 type: null
 kinematics_convention: null
 kinematics:
