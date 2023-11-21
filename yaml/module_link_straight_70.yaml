@@ -10,6 +10,16 @@ header:
     family: "alberoboticsGenA"
     label: "Passive Link Straight 70mm"
     disabled: False
+    # offsets:
+    #     yaw: 
+    #         - label: "-π/2" 
+    #           value: -1.5707963267948966
+    #         - 0
+    #         - label: "π/2" 
+    #           value: 1.5707963267948966
+    #         - label: "π" 
+    #           value: 3.141592653589793
+    reversible: false
 kinematics_convention: DH_ext
 kinematics:
     joint: null

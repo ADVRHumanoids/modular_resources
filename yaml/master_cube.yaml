@@ -10,6 +10,8 @@ header:
     family: "alberoboticsGenA"
     label: "Multi-socket Cube Module"
     disabled: False
+    offsets: {}
+    reversible: false
 kinematics_convention: urdf
 kinematics:
     connector_1:
