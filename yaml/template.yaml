@@ -1,6 +1,6 @@
 header:
     ID: null
-    name: null
+    name: "template.yaml"
     date: null
     author: null
     affiliation: null
@@ -10,6 +10,8 @@ header:
     family: null
     label: null
     disabled: True
+    offsets: {}
+    reversible: False
 type: null
 kinematics_convention: null
 kinematics:

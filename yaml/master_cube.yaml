@@ -10,6 +10,8 @@ header:
     family: "alberoboticsGenA"
     label: "Multi-socket Cube Module"
     disabled: False
+    offsets: {}
+    reversible: false
 kinematics_convention: urdf
 kinematics:
     connector_1:
@@ -42,18 +44,18 @@ kinematics:
         z: 0.17
 dynamics:
     body_1:
-        mass: null
+        mass: 0.0
         inertia_tensor:
-            I_xx: null
-            I_yy: null
-            I_zz: null
-            I_xy: null
-            I_xz: null
-            I_yz: null
+            I_xx: 0.0
+            I_yy: 0.0
+            I_zz: 0.0
+            I_xy: 0.0
+            I_xz: 0.0
+            I_yz: 0.0
         CoM:
-            x: null
-            y: null
-            z: null
+            x: 0.0
+            y: 0.0
+            z: 0.0
 flange_size: big
 type: cube
 visual:
