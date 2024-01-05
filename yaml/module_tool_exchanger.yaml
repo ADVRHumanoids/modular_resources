@@ -9,7 +9,7 @@ header:
     type: "tool_exchanger"
     family: "alberoboticsGenA"
     label: "Tool Exchanger"
-    disabled: False
+    disabled: True
     # offsets:
     #     yaw: 
     #         - label: "-π/2" 
