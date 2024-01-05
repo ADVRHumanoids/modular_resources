@@ -1,6 +1,6 @@
 header:
     ID": "2120"
-    name: "master_cube.yaml"
+    name: "master_cube_non_structural.yaml"
     date: "2023-10-12"
     author: "EdaordoRomiti"
     affiliation: "IIT"
@@ -8,9 +8,9 @@ header:
     cost: 0
     type: "cube"
     family: "alberoboticsGenA"
-    label: "Multi-socket Cube Module"
+    label: "Non-structural Multi-socket Cube Module"
     is_structural: False
-    disabled: False
+    disabled: True
     offsets:
         yaw: 
             - label: "-π/2" 
