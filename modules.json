@@ -1,0 +1,1083 @@
+{
+  "modules": [
+    {
+      "header": {
+        "ID": "1120",
+        "name": "module_joint_yaw_ORANGE.yaml",
+        "date": "2023-10-12",
+        "author": [
+          "EdaordoRomiti"
+        ],
+        "email": [
+          "edoardo.romiti@iit.it"
+        ],
+        "affiliation": [
+          "IIT"
+        ],
+        "cost": 0.0
+      },
+      "bodies": [
+        {
+          "ID": "body_1",
+          "mass": 2.0554934,
+          "inertia": [
+            [ 0.01068855, -1.14168e-05, 2.71689e-06 ],
+            [ -1.14168e-05, 0.010584907, 8.76312e-05 ],
+            [ 2.71689e-06, 8.76312e-05, 0.0032026258 ]
+          ],
+          "r_com": [ 0.0, 0.0, 0.10614489 ],
+          "connectors": [
+            {
+              "ID": "1120_in",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, -1.0, -0.0, 0.0 ],
+                [ 0.0, 0.0, -1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "f",
+              "type": "big",
+              "size": []
+            }
+          ],
+          "visual": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/yaw_base.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ],
+          "collision": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/simple/yaw_base.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ]
+        },
+        {
+          "ID": "body_2",
+          "mass": 0.62034795,
+          "inertia": [
+            [ 0.0015244832047166456, 1.1661133999999999e-05, 4.44352172e-06 ],
+            [ 1.1661133999999999e-05, 0.0015293181347166456, 1.9540661300000002e-05 ],
+            [ 4.44352172e-06, 1.9540661300000002e-05, 0.0010225503799999999 ]
+          ],
+          "r_com": [ 0.0, 0.0, -0.047781250285749075 ],
+          "connectors": [
+            {
+              "ID": "1120_out",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "f",
+              "type": "big",
+              "size": []
+            }
+          ],
+          "visual": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/yaw_link.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ],
+          "collision": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/simple/yaw_link.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ]
+        }
+      ],
+      "joints": [
+        {
+          "ID": "1120_joint",
+          "parent": "body_1",
+          "child": "body_2",
+          "type": "revolute",
+          "passive": false,
+          "poseParent": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.214 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ],
+          "poseChild": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ],
+          "limits": {
+            "positionLower": -2.8,
+            "positionUpper": 2.8,
+            "peakTorque": 147.0,
+            "velocity": 3.9,
+            "acceleration": Infinity
+          },
+          "gearRatio": 160.0,
+          "motorInertia": 1.287638e-05,
+          "frictionCoulomb": 0.0,
+          "frictionViscous": 0.0
+        }
+      ]
+    },
+    {
+      "header": {
+        "ID": "1220",
+        "name": "module_joint_double_elbow_ORANGE.yaml",
+        "date": "2023-10-12",
+        "author": [
+          "EdaordoRomiti"
+        ],
+        "email": [
+          "edoardo.romiti@iit.it"
+        ],
+        "affiliation": [
+          "IIT"
+        ],
+        "cost": 0.0
+      },
+      "bodies": [
+        {
+          "ID": "body_1",
+          "mass": 1.8627994,
+          "inertia": [
+            [ 0.0080669105, 6.8780537e-06, 2.4976943e-05 ],
+            [ 6.8780537e-06, 0.0069731259, 0.00033158425 ],
+            [ 2.4976943e-05, 0.00033158425, 0.0037855995 ]
+          ],
+          "r_com": [ 0.0, -0.013666345, 0.095904755 ],
+          "connectors": [
+            {
+              "ID": "1220_in",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, -1.0, -0.0, 0.0 ],
+                [ 0.0, 0.0, -1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "f",
+              "type": "big",
+              "size": []
+            }
+          ],
+          "visual": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/elbow_base.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ],
+          "collision": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/simple/elbow_base.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ]
+        },
+        {
+          "ID": "body_2",
+          "mass": 1.3007703000000002,
+          "inertia": [
+            [ 0.005852158888296223, 6.5396659e-06, 1.0503049999999994e-07 ],
+            [ 6.5396659e-06, 0.003166041242136025, -0.0006473132530885725 ],
+            [ 1.0503049999999994e-07, -0.0006473132530885725, 0.005263879046160199 ]
+          ],
+          "r_com": [ 0.0, -0.03445482377967901, -0.047474035675197604 ],
+          "connectors": [
+            {
+              "ID": "1220_out",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 0.0007963267, -0.9999996829, -0.1319999581 ],
+                [ 0.0, 0.9999996829, 0.0007963267, -0.0720448849 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "f",
+              "type": "big",
+              "size": []
+            }
+          ],
+          "visual": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/elbow_link.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ -0.9999987317, 0.0, 0.0015926529, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ -0.0015926529, 0.0, -0.9999987317, -0.072 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ],
+          "collision": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/simple/elbow_link.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ -0.9999987317, 0.0, 0.0015926529, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ -0.0015926529, 0.0, -0.9999987317, -0.072 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ]
+        }
+      ],
+      "joints": [
+        {
+          "ID": "1220_joint",
+          "parent": "body_1",
+          "child": "body_2",
+          "type": "revolute",
+          "passive": false,
+          "poseParent": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 0.0007963267, 0.9999996829, 0.0721499771 ],
+            [ 0.0, -0.9999996829, 0.0007963267, 0.132057455 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ],
+          "poseChild": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ],
+          "limits": {
+            "positionLower": -2.0,
+            "positionUpper": 2.0,
+            "peakTorque": 147.0,
+            "velocity": 3.9,
+            "acceleration": Infinity
+          },
+          "gearRatio": 160.0,
+          "motorInertia": 1.287638e-05,
+          "frictionCoulomb": 0.0,
+          "frictionViscous": 0.0
+        }
+      ]
+    },
+    {
+      "header": {
+        "ID": "3220",
+        "name": "module_gripper.yaml",
+        "date": "2023-10-12",
+        "author": [
+          "EdaordoRomiti"
+        ],
+        "email": [
+          "edoardo.romiti@iit.it"
+        ],
+        "affiliation": [
+          "IIT"
+        ],
+        "cost": 0.0
+      },
+      "bodies": [
+        {
+          "ID": "body_1",
+          "mass": 1.182,
+          "inertia": [
+            [ 0.0025968127, 0.0, 0.0 ],
+            [ 0.0, 0.0020344466, 0.0 ],
+            [ 0.0, 0.0, 0.0014696895 ]
+          ],
+          "r_com": [ 0.0, 0.0, 0.0798 ],
+          "connectors": [
+            {
+              "ID": "3220_in",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, -1.0, -0.0, 0.0 ],
+                [ 0.0, 0.0, -1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "f",
+              "type": "big",
+              "size": []
+            }
+          ],
+          "visual": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/gripper_outer_assembly_simplified.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ],
+          "collision": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/simple/gripper_outer_assembly_simplified.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ]
+        },
+        {
+          "ID": "body_2",
+          "mass": 0.001,
+          "inertia": [
+            [ 1e-05, 0.0, 0.0 ],
+            [ 0.0, 1e-05, 0.0 ],
+            [ 0.0, 0.0, 1e-05 ]
+          ],
+          "r_com": [ 0.0, 0.0, 0.0 ],
+          "connectors": [
+            {
+              "ID": "3220_out",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.071 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "f",
+              "type": "big",
+              "size": []
+            }
+          ],
+          "visual": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/fingerup_7_raised.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ],
+          "collision": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/simple/fingerup_7_raised.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ]
+        }
+      ],
+      "joints": [
+        {
+          "ID": "3220_joint",
+          "parent": "body_1",
+          "child": "body_2",
+          "type": "fixed",
+          "passive": false,
+          "poseParent": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.1275 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ],
+          "poseChild": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ],
+          "limits": {
+            "positionLower": 0.0,
+            "positionUpper": 0.05,
+            "peakTorque": 20.0,
+            "velocity": 0.2,
+            "acceleration": Infinity
+          },
+          "gearRatio": 100.0,
+          "motorInertia": 0.0,
+          "frictionCoulomb": 0.0,
+          "frictionViscous": 0.0
+        }
+      ]
+    },
+    {
+      "header": {
+        "ID": "4120",
+        "name": "module_link_straight_140.yaml",
+        "date": "2023-10-12",
+        "author": [
+          "EdaordoRomiti"
+        ],
+        "email": [
+          "edoardo.romiti@iit.it"
+        ],
+        "affiliation": [
+          "IIT"
+        ],
+        "cost": 0.0
+      },
+      "bodies": [
+        {
+          "ID": "body_1",
+          "mass": 0.93,
+          "inertia": [
+            [ 0.007, 5e-06, 5e-06 ],
+            [ 5e-06, 0.007, 5e-06 ],
+            [ 5e-06, 5e-06, 0.002 ]
+          ],
+          "r_com": [ 0.0, 0.0, 0.07 ],
+          "connectors": [
+            {
+              "ID": "4120_in",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, -1.0, -0.0, 0.0 ],
+                [ 0.0, 0.0, -1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "f",
+              "type": "big",
+              "size": []
+            },
+            {
+              "ID": "4120_out",
+              "pose": [
+                [ -0.9999987317, -0.0015926529, 0.0, 0.0 ],
+                [ 0.0015926529, -0.9999987317, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.14 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "m",
+              "type": "big",
+              "size": []
+            }
+          ],
+          "visual": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/passive_link_straight_140.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ],
+          "collision": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/passive_link_straight_140.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ]
+        }
+      ],
+      "joints": []
+    },
+    {
+      "header": {
+        "ID": "4121",
+        "name": "module_link_straight_350.yaml",
+        "date": "2023-10-12",
+        "author": [
+          "EdaordoRomiti"
+        ],
+        "email": [
+          "edoardo.romiti@iit.it"
+        ],
+        "affiliation": [
+          "IIT"
+        ],
+        "cost": 0.0
+      },
+      "bodies": [
+        {
+          "ID": "body_1",
+          "mass": 1.43,
+          "inertia": [
+            [ 0.025, 5e-06, 5e-06 ],
+            [ 5e-06, 0.025, 5e-06 ],
+            [ 5e-06, 5e-06, 0.003 ]
+          ],
+          "r_com": [ 0.0, 0.0, 0.175 ],
+          "connectors": [
+            {
+              "ID": "4121_in",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, -1.0, -0.0, 0.0 ],
+                [ 0.0, 0.0, -1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "f",
+              "type": "big",
+              "size": []
+            },
+            {
+              "ID": "4121_out",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.35 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "m",
+              "type": "big",
+              "size": []
+            }
+          ],
+          "visual": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/passive_link_straight_350.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ],
+          "collision": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/passive_link_straight_350.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ]
+        }
+      ],
+      "joints": []
+    },
+    {
+      "header": {
+        "ID": "4122",
+        "name": "module_link_straight_70.yaml",
+        "date": "2023-10-12",
+        "author": [
+          "EdaordoRomiti"
+        ],
+        "email": [
+          "edoardo.romiti@iit.it"
+        ],
+        "affiliation": [
+          "IIT"
+        ],
+        "cost": 0.0
+      },
+      "bodies": [
+        {
+          "ID": "body_1",
+          "mass": 0.76,
+          "inertia": [
+            [ 0.005, 5e-06, 5e-06 ],
+            [ 5e-06, 0.005, 5e-06 ],
+            [ 5e-06, 5e-06, 0.002 ]
+          ],
+          "r_com": [ 0.0, 0.0, 0.035 ],
+          "connectors": [
+            {
+              "ID": "4122_in",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, -1.0, -0.0, 0.0 ],
+                [ 0.0, 0.0, -1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "f",
+              "type": "big",
+              "size": []
+            },
+            {
+              "ID": "4122_out",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.07 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "m",
+              "type": "big",
+              "size": []
+            }
+          ],
+          "visual": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/passive_link_straight_70.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ],
+          "collision": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/passive_link_straight_70.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ]
+        }
+      ],
+      "joints": []
+    },
+    {
+      "header": {
+        "ID": "4220",
+        "name": "module_link_elbow_90.yaml",
+        "date": "2023-10-12",
+        "author": [
+          "EdaordoRomiti"
+        ],
+        "email": [
+          "edoardo.romiti@iit.it"
+        ],
+        "affiliation": [
+          "IIT"
+        ],
+        "cost": 0.0
+      },
+      "bodies": [
+        {
+          "ID": "body_1",
+          "mass": 1.04,
+          "inertia": [
+            [ 0.007, -5e-06, 5e-06 ],
+            [ -5e-06, 0.006, 5e-06 ],
+            [ 5e-06, 5e-06, 0.004 ]
+          ],
+          "r_com": [ 0.0, 0.025, 0.05 ],
+          "connectors": [
+            {
+              "ID": "4220_in",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, -1.0, -0.0, 0.0 ],
+                [ 0.0, 0.0, -1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "f",
+              "type": "big",
+              "size": []
+            },
+            {
+              "ID": "4220_out",
+              "pose": [
+                [ -0.9999987317, -0.0015926529, 0.0, 0.0 ],
+                [ 1.2683e-06, -0.0007963257, 0.9999996829, 0.0829999737 ],
+                [ -0.0015926524, 0.9999984147, 0.0007963267, 0.0830660951 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "m",
+              "type": "big",
+              "size": []
+            }
+          ],
+          "visual": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/passive_link_l_90.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ],
+          "collision": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/passive_link_l_90.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ]
+        }
+      ],
+      "joints": []
+    },
+    {
+      "header": {
+        "ID": "4221",
+        "name": "module_link_elbow_135.yaml",
+        "date": "2023-10-12",
+        "author": [
+          "EdaordoRomiti"
+        ],
+        "email": [
+          "edoardo.romiti@iit.it"
+        ],
+        "affiliation": [
+          "IIT"
+        ],
+        "cost": 0.0
+      },
+      "bodies": [
+        {
+          "ID": "body_1",
+          "mass": 1.2,
+          "inertia": [
+            [ 0.012, -5e-06, 5e-06 ],
+            [ -5e-06, 0.006, -0.004 ],
+            [ 5e-06, -0.004, 0.009 ]
+          ],
+          "r_com": [ 0.0, 0.048, 0.05 ],
+          "connectors": [
+            {
+              "ID": "4221_in",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, -1.0, -0.0, 0.0 ],
+                [ 0.0, 0.0, -1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "f",
+              "type": "big",
+              "size": []
+            },
+            {
+              "ID": "4221_out",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, -0.7097925564, 0.7044107658, 0.1282027594 ],
+                [ 0.0, -0.7044107658, -0.7097925564, 0.0528177547 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "m",
+              "type": "big",
+              "size": []
+            }
+          ],
+          "visual": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/passive_link_l_135.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 0.9975510003, 0.0699428473, 0.0, 0.0 ],
+                [ -0.0699428473, 0.9975510003, -0.0, 0.0 ],
+                [ -0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ],
+          "collision": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/passive_link_l_135.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ]
+        }
+      ],
+      "joints": []
+    },
+    {
+      "header": {
+        "ID": "4222",
+        "name": "module_link_elbow_45.yaml",
+        "date": "2023-10-12",
+        "author": [
+          "EdaordoRomiti"
+        ],
+        "email": [
+          "edoardo.romiti@iit.it"
+        ],
+        "affiliation": [
+          "IIT"
+        ],
+        "cost": 0.0
+      },
+      "bodies": [
+        {
+          "ID": "body_1",
+          "mass": 0.88,
+          "inertia": [
+            [ 0.003, -5e-06, 5e-06 ],
+            [ -5e-06, 0.003, 5e-06 ],
+            [ 5e-06, 5e-06, 0.002 ]
+          ],
+          "r_com": [ 0.0, 0.005, 0.035 ],
+          "connectors": [
+            {
+              "ID": "4222_in",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, -1.0, -0.0, 0.0 ],
+                [ 0.0, 0.0, -1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "f",
+              "type": "big",
+              "size": []
+            },
+            {
+              "ID": "4222_out",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 0.7038453157, 0.7103532724, 0.0298348374 ],
+                [ 0.0, -0.7103532724, 0.7038453157, 0.0715615033 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "m",
+              "type": "big",
+              "size": []
+            }
+          ],
+          "visual": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/passive_link_l_45.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ],
+          "collision": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/passive_link_l_45.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ]
+        }
+      ],
+      "joints": []
+    },
+    {
+      "header": {
+        "ID": "6320",
+        "name": "socket.yaml",
+        "date": "2023-10-12",
+        "author": [
+          "EdaordoRomiti"
+        ],
+        "email": [
+          "edoardo.romiti@iit.it"
+        ],
+        "affiliation": [
+          "IIT"
+        ],
+        "cost": 0.0
+      },
+      "bodies": [
+        {
+          "ID": "body_1",
+          "mass": 0.76,
+          "inertia": [
+            [ 0.005, 5e-06, 5e-06 ],
+            [ 5e-06, 0.005, 5e-06 ],
+            [ 5e-06, 5e-06, 0.002 ]
+          ],
+          "r_com": [ 0.0, 0.0, 0.035 ],
+          "connectors": [
+            {
+              "ID": "6320_in",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, -1.0, -0.0, 0.0 ],
+                [ 0.0, 0.0, -1.0, 0.0 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "f",
+              "type": "big",
+              "size": []
+            },
+            {
+              "ID": "6320_out",
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.06 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ],
+              "gender": "m",
+              "type": "big",
+              "size": []
+            }
+          ],
+          "visual": [
+            {
+              "type": "mesh",
+              "parameters": {
+                "file": "models/modular/meshes/alberobotics/module_base_mesh.stl",
+                "scale": [ 0.001, 0.001, 0.001 ]
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.06 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ],
+          "collision": [
+            {
+              "type": "cylinder",
+              "parameters": {
+                "r": 0.045,
+                "z": 0.06
+              },
+              "pose": [
+                [ 1.0, 0.0, 0.0, 0.0 ],
+                [ 0.0, 1.0, 0.0, 0.0 ],
+                [ 0.0, 0.0, 1.0, 0.03 ],
+                [ 0.0, 0.0, 0.0, 1.0 ]
+              ]
+            }
+          ]
+        }
+      ],
+      "joints": []
+    }
+  ]
+}

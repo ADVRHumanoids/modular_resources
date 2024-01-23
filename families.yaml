@@ -8,3 +8,8 @@ families:
     - id: "alberoboticsGenA"
       group: "Alberobotics"
       label: "PINO v1"
+    # PINO v1 TUM-compatible version
+    - id: "alberoboticsGenA-TUM"
+      group: "Alberobotics"
+      label: "PINO v1 TUM-compatible version"
+      disabled: True
