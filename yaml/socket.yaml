@@ -2,11 +2,11 @@ header:
     ID": "6320"
     name: "socket.yaml"
     date: "2023-10-12"
-    author: "EdaordoRomiti"
+    author: "EdoardoRomiti"
     affiliation: "IIT"
     email: "edoardo.romiti@iit.it"
     cost: 0
-    type: "link"
+    type: "socket"
     family: "alberoboticsGenA"
     label: "Socket"
     disabled: False
@@ -79,7 +79,7 @@ collision:
 flange_size: big
 size_in: null
 size_out: null
-type: link
+type: socket
 gazebo:
     body_1:
         mu1: 0.2
