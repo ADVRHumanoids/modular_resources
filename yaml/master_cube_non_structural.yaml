@@ -1,0 +1,110 @@
+header:
+    ID": "2120"
+    name: "master_cube_non_structural.yaml"
+    date: "2023-10-12"
+    author: "EdaordoRomiti"
+    affiliation: "IIT"
+    email: "edoardo.romiti@iit.it"
+    cost: 0
+    type: "cube"
+    family: "alberoboticsGenA"
+    label: "Non-structural Multi-socket Cube Module"
+    is_structural: False
+    disabled: True
+    offsets:
+        yaw: 
+            - label: "-π/2" 
+              value: -1.5707963267948966
+            - 0
+            - label: "π/2" 
+              value: 1.5707963267948966
+            - label: "π" 
+              value: 3.141592653589793
+    reversible: false
+kinematics_convention: urdf
+kinematics:
+    connector_1:
+        roll: 3.14
+        pitch: 0.0
+        yaw: 0.0
+        x: 0.0
+        y: 0.0
+        z: 0.0
+    connector_2:
+        roll: 0
+        pitch: 0
+        yaw: 0
+        x: 0
+        y: 0
+        z: 0.34
+    connector_3:
+        roll: 1.57
+        pitch: 0
+        yaw: 0
+        x: 0
+        y: -0.17
+        z: 0.17
+    connector_4:
+        roll: 0.0
+        pitch: 1.57
+        yaw: 0.0
+        x: 0.17
+        y: 0.0
+        z: 0.17
+dynamics:
+    body_1:
+        mass: 0.0
+        inertia_tensor:
+            I_xx: 0.0
+            I_yy: 0.0
+            I_zz: 0.0
+            I_xy: 0.0
+            I_xz: 0.0
+            I_yz: 0.0
+        CoM:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+flange_size: big
+type: cube
+visual:
+    body_1:
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/space_cube.stl
+                scale: [0.001, 0.001, 0.001]
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.17
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
+            color: ''
+    body_2: []
+collision:
+    body_1:
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/space_cube.stl
+                scale: [0.001, 0.001, 0.001]
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.0
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
+    body_2: []
+gazebo:
+    body_1:
+        mu1: 0.2
+        mu2: 0.2
+        kp: 1000000.0
+        kd: 1.0
+        maxVel: 0.0
+        minDepth: 0.0001
+        material: 'Gazebo/Grey'
+        selfCollide: true
