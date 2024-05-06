@@ -27,7 +27,7 @@
         {
           "type":"cylinder",
           "parameters": {
-            "radius": 0.0675,
+            "radius": 0.055,
             "length": 0.5,
             "color": {
               "material_name": "grey"
@@ -45,7 +45,7 @@
         {
           "type":"cylinder",
           "parameters": {
-            "radius": 0.0675,
+            "radius": 0.055,
             "length": 0.5
           },
           "pose": [
@@ -67,7 +67,7 @@
           ],
           "gender": "f",
           "type": "clamp",
-          "size": "medium"
+          "size": "big"
         },
         {
           "ID": "4520_connector_2",
@@ -79,7 +79,7 @@
           ],
           "gender": "m",
           "type": "clamp",
-          "size": "medium"
+          "size": "big"
         }
       ],
       "gazebo": [
