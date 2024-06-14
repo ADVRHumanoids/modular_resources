@@ -43,7 +43,10 @@
                     }
                 },
                 "xbot_gz": {
-                    "profile": "small_mot"
+                    "pid": {
+                        "p": 20.0,
+                        "d": 5.0
+                    }
                 },
                 "joint_gripper_adapter": {
                     "joint_type": {"value": "joint_ec", "type": "string"},
