@@ -1,6 +1,6 @@
 header:
-    ID: "2120"
-    name: "master_cube.yaml"
+    ID": "2120"
+    name: "master_cube_non_structural.yaml"
     date: "2023-10-12"
     author: "EdaordoRomiti"
     affiliation: "IIT"
@@ -8,9 +8,18 @@ header:
     cost: 0
     type: "cube"
     family: "alberoboticsGenA"
-    label: "Multi-socket Cube Module"
-    disabled: False
-    offsets: {}
+    label: "Non-structural Multi-socket Cube Module"
+    is_structural: False
+    disabled: True
+    offsets:
+        yaw: 
+            - label: "-π/2" 
+              value: -1.5707963267948966
+            - 0
+            - label: "π/2" 
+              value: 1.5707963267948966
+            - label: "π" 
+              value: 3.141592653589793
     reversible: false
 kinematics_convention: urdf
 kinematics:

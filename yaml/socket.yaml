@@ -2,14 +2,26 @@ header:
     ID: "6320"
     name: "socket.yaml"
     date: "2023-10-12"
-    author: "EdaordoRomiti"
+    author: "EdoardoRomiti"
     affiliation: "IIT"
     email: "edoardo.romiti@iit.it"
     cost: 0
-    type: "link"
+    type: "socket"
     family: "alberoboticsGenA"
     label: "Socket"
     disabled: False
+    offsets:
+        x: []
+        y: []
+        yaw: 
+            - 0
+            - label: "-π/2" 
+              value: -1.5707963267948966
+            - label: "π/2" 
+              value: 1.5707963267948966
+            - label: "π" 
+              value: 3.141592653589793
+    reversible: false
 kinematics_convention: DH_ext
 kinematics:
     joint: null
@@ -18,7 +30,7 @@ kinematics:
         alpha_l: 0.0
         p_l: 0.0
         n_l: 0.06
-        delta_l_in: 0.0
+        delta_l_in: 1.57
         delta_l_out: 0.0
 dynamics:
     body_1:
@@ -67,7 +79,7 @@ collision:
 flange_size: big
 size_in: null
 size_out: null
-type: link
+type: socket
 gazebo:
     body_1:
         mu1: 0.2
