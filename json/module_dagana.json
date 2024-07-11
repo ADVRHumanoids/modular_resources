@@ -3,14 +3,15 @@
         "ID": "3420",
         "name": "module_dagana.json",
         "date":"2022-11-16",
-        "author": "EdaordoRomiti",
+        "author": "EdoardoRomiti",
         "affiliation": "IIT",
         "email": "edoardo.romiti@iit.it",
         "cost": 0,
         "type": "dagana",
         "family": "alberoboticsGenB",
         "label": "Dagana Gripper",
-        "disabled": false
+        "disabled": false,
+        "addons": ["dagana_claws"]
     },
     "bodies": [],
     "joints": [
