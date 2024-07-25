@@ -1,0 +1,163 @@
+{
+  "header": {
+    "ID": "1120",
+    "name": "module_joint_yaw_ORANGE.yaml.json",
+    "date": "2023-10-12",
+    "author": [
+      "EdaordoRomiti"
+    ],
+    "email": [
+      "edoardo.romiti@iit.it"
+    ],
+    "affiliation": [
+      "IIT"
+    ],
+    "cost": 0.0,
+    "type": "joint",
+    "family": "alberoboticsGenA-TUM",
+    "label": "Straight Joint",
+    "disabled": false
+  },
+  "bodies": [
+    {
+      "ID": "body_1",
+      "mass": 2.0554934,
+      "inertia": [
+        [ 0.01068855, -1.14168e-05, 2.71689e-06 ],
+        [ -1.14168e-05, 0.010584907, 8.76312e-05 ],
+        [ 2.71689e-06, 8.76312e-05, 0.0032026258 ]
+      ],
+      "r_com": [ 0.0, 0.0, 0.10614489 ],
+      "connectors": [
+        {
+          "ID": "1120_in",
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, -1.0, -0.0, 0.0 ],
+            [ 0.0, 0.0, -1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ],
+          "gender": "f",
+          "type": "big",
+          "size": []
+        }
+      ],
+      "visual": [
+        {
+          "type": "mesh",
+          "parameters": {
+            "file": "alberobotics/yaw_base.stl",
+            "scale": [ 0.001, 0.001, 0.001 ]
+          },
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ]
+        }
+      ],
+      "collision": [
+        {
+          "type": "mesh",
+          "parameters": {
+            "file": "alberobotics/simple/yaw_base.stl",
+            "scale": [ 0.001, 0.001, 0.001 ]
+          },
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ]
+        }
+      ]
+    },
+    {
+      "ID": "body_2",
+      "mass": 0.62034795,
+      "inertia": [
+        [ 0.0015244832047166456, 1.1661133999999999e-05, 4.44352172e-06 ],
+        [ 1.1661133999999999e-05, 0.0015293181347166456, 1.9540661300000002e-05 ],
+        [ 4.44352172e-06, 1.9540661300000002e-05, 0.0010225503799999999 ]
+      ],
+      "r_com": [ 0.0, 0.0, -0.047781250285749075 ],
+      "connectors": [
+        {
+          "ID": "1120_out",
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ],
+          "gender": "f",
+          "type": "big",
+          "size": []
+        }
+      ],
+      "visual": [
+        {
+          "type": "mesh",
+          "parameters": {
+            "file": "alberobotics/yaw_link.stl",
+            "scale": [ 0.001, 0.001, 0.001 ]
+          },
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ]
+        }
+      ],
+      "collision": [
+        {
+          "type": "mesh",
+          "parameters": {
+            "file": "alberobotics/simple/yaw_link.stl",
+            "scale": [ 0.001, 0.001, 0.001 ]
+          },
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ]
+        }
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "ID": "1120_joint",
+      "parent": "body_1",
+      "child": "body_2",
+      "type": "revolute",
+      "passive": false,
+      "poseParent": [
+        [ 1.0, 0.0, 0.0, 0.0 ],
+        [ 0.0, 1.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 1.0, 0.214 ],
+        [ 0.0, 0.0, 0.0, 1.0 ]
+      ],
+      "poseChild": [
+        [ 1.0, 0.0, 0.0, 0.0 ],
+        [ 0.0, 1.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 1.0, 0.0 ],
+        [ 0.0, 0.0, 0.0, 1.0 ]
+      ],
+      "limits": {
+        "positionLower": -2.8,
+        "positionUpper": 2.8,
+        "peakTorque": 147.0,
+        "velocity": 3.9,
+        "acceleration": Infinity
+      },
+      "gearRatio": 160.0,
+      "motorInertia": 1.287638e-05,
+      "frictionCoulomb": 0.0,
+      "frictionViscous": 0.0
+    }
+  ]
+}

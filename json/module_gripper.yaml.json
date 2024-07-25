@@ -1,0 +1,163 @@
+{
+  "header": {
+    "ID": "3220",
+    "name": "module_gripper.yaml.json",
+    "date": "2023-10-12",
+    "author": [
+      "EdaordoRomiti"
+    ],
+    "email": [
+      "edoardo.romiti@iit.it"
+    ],
+    "affiliation": [
+      "IIT"
+    ],
+    "cost": 0.0,
+    "type": "gripper",
+    "family": "alberoboticsGenA-TUM",
+    "label": "Gripper",
+    "disabled": false
+  },
+  "bodies": [
+    {
+      "ID": "body_1",
+      "mass": 1.182,
+      "inertia": [
+        [ 0.0025968127, 0.0, 0.0 ],
+        [ 0.0, 0.0020344466, 0.0 ],
+        [ 0.0, 0.0, 0.0014696895 ]
+      ],
+      "r_com": [ 0.0, 0.0, 0.0798 ],
+      "connectors": [
+        {
+          "ID": "3220_in",
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, -1.0, -0.0, 0.0 ],
+            [ 0.0, 0.0, -1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ],
+          "gender": "f",
+          "type": "big",
+          "size": []
+        }
+      ],
+      "visual": [
+        {
+          "type": "mesh",
+          "parameters": {
+            "file": "alberobotics/gripper_outer_assembly_simplified.stl",
+            "scale": [ 0.001, 0.001, 0.001 ]
+          },
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ]
+        }
+      ],
+      "collision": [
+        {
+          "type": "mesh",
+          "parameters": {
+            "file": "alberobotics/simple/gripper_outer_assembly_simplified.stl",
+            "scale": [ 0.001, 0.001, 0.001 ]
+          },
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ]
+        }
+      ]
+    },
+    {
+      "ID": "body_2",
+      "mass": 0.001,
+      "inertia": [
+        [ 1e-05, 0.0, 0.0 ],
+        [ 0.0, 1e-05, 0.0 ],
+        [ 0.0, 0.0, 1e-05 ]
+      ],
+      "r_com": [ 0.0, 0.0, 0.0 ],
+      "connectors": [
+        {
+          "ID": "3220_out",
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.071 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ],
+          "gender": "f",
+          "type": "big",
+          "size": []
+        }
+      ],
+      "visual": [
+        {
+          "type": "mesh",
+          "parameters": {
+            "file": "alberobotics/fingerup_7_raised.stl",
+            "scale": [ 0.001, 0.001, 0.001 ]
+          },
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ]
+        }
+      ],
+      "collision": [
+        {
+          "type": "mesh",
+          "parameters": {
+            "file": "alberobotics/simple/fingerup_7_raised.stl",
+            "scale": [ 0.001, 0.001, 0.001 ]
+          },
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ]
+        }
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "ID": "3220_joint",
+      "parent": "body_1",
+      "child": "body_2",
+      "type": "fixed",
+      "passive": false,
+      "poseParent": [
+        [ 1.0, 0.0, 0.0, 0.0 ],
+        [ 0.0, 1.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 1.0, 0.1275 ],
+        [ 0.0, 0.0, 0.0, 1.0 ]
+      ],
+      "poseChild": [
+        [ 1.0, 0.0, 0.0, 0.0 ],
+        [ 0.0, 1.0, 0.0, 0.0 ],
+        [ 0.0, 0.0, 1.0, 0.0 ],
+        [ 0.0, 0.0, 0.0, 1.0 ]
+      ],
+      "limits": {
+        "positionLower": 0.0,
+        "positionUpper": 0.05,
+        "peakTorque": 20.0,
+        "velocity": 0.2,
+        "acceleration": Infinity
+      },
+      "gearRatio": 100.0,
+      "motorInertia": 0.0,
+      "frictionCoulomb": 0.0,
+      "frictionViscous": 0.0
+    }
+  ]
+}

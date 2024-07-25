@@ -1,0 +1,90 @@
+{
+  "header": {
+    "ID": "4220",
+    "name": "module_link_elbow_90.yaml.json",
+    "date": "2023-10-12",
+    "author": [
+      "EdaordoRomiti"
+    ],
+    "email": [
+      "edoardo.romiti@iit.it"
+    ],
+    "affiliation": [
+      "IIT"
+    ],
+    "cost": 0.0,
+    "type": "link",
+    "family": "alberoboticsGenA-TUM",
+    "label": "Passive Link Elbow 90°",
+    "disabled": false
+  },
+  "bodies": [
+    {
+      "ID": "body_1",
+      "mass": 1.04,
+      "inertia": [
+        [ 0.007, -5e-06, 5e-06 ],
+        [ -5e-06, 0.006, 5e-06 ],
+        [ 5e-06, 5e-06, 0.004 ]
+      ],
+      "r_com": [ 0.0, 0.025, 0.05 ],
+      "connectors": [
+        {
+          "ID": "4220_in",
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, -1.0, -0.0, 0.0 ],
+            [ 0.0, 0.0, -1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ],
+          "gender": "f",
+          "type": "big",
+          "size": []
+        },
+        {
+          "ID": "4220_out",
+          "pose": [
+            [ -0.9999987317, -0.0015926529, 0.0, 0.0 ],
+            [ 1.2683e-06, -0.0007963257, 0.9999996829, 0.0829999737 ],
+            [ -0.0015926524, 0.9999984147, 0.0007963267, 0.0830660951 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ],
+          "gender": "m",
+          "type": "big",
+          "size": []
+        }
+      ],
+      "visual": [
+        {
+          "type": "mesh",
+          "parameters": {
+            "file": "alberobotics/passive_link_l_90.stl",
+            "scale": [ 0.001, 0.001, 0.001 ]
+          },
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ]
+        }
+      ],
+      "collision": [
+        {
+          "type": "mesh",
+          "parameters": {
+            "file": "alberobotics/passive_link_l_90.stl",
+            "scale": [ 0.001, 0.001, 0.001 ]
+          },
+          "pose": [
+            [ 1.0, 0.0, 0.0, 0.0 ],
+            [ 0.0, 1.0, 0.0, 0.0 ],
+            [ 0.0, 0.0, 1.0, 0.0 ],
+            [ 0.0, 0.0, 0.0, 1.0 ]
+          ]
+        }
+      ]
+    }
+  ],
+  "joints": []
+}
