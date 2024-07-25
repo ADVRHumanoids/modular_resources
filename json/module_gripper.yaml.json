@@ -14,7 +14,9 @@
     ],
     "cost": 0.0,
     "type": "gripper",
-    "family": "alberoboticsGenA-TUM"
+    "family": "alberoboticsGenA-TUM",
+    "label": "Gripper",
+    "disabled": false
   },
   "bodies": [
     {

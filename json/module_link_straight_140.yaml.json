@@ -14,7 +14,9 @@
     ],
     "cost": 0.0,
     "type": "link",
-    "family": "alberoboticsGenA-TUM"
+    "family": "alberoboticsGenA-TUM",
+    "label": "Passive Link Straight 140mm",
+    "disabled": false
   },
   "bodies": [
     {
