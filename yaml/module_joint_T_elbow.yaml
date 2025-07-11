@@ -1,6 +1,6 @@
 header:
     ID": "1221"
-    name: "module_joint_elbow_ORANGE.yaml"
+    name: "module_joint_T_elbow.yaml"
     date: "2023-10-12"
     author: "EdaordoRomiti"
     affiliation: "IIT"
@@ -50,6 +50,7 @@ actuator_data:
     effort: 147
     velocity: 3.9
     gear_ratio: 100
+    continuous_effort: 81
 dynamics:
     body_1:
         mass: 0.890557
@@ -91,24 +92,37 @@ dynamics:
             y: 0.0
             z: 0.0
 visual:
-    mesh_body_1: package://modular_resources/models/modular/meshes/alberobotics/fixed_parts.stl
-    tf_mesh_1:
-        x: 0.0
-        y: 0.0
-        z: 0.0
-        roll: 0.0
-        pitch: 0.0
-        yaw: 0.0
-    mesh_body_2: package://modular_resources/models/modular/meshes/alberobotics/rotating_parts.stl
-    tf_mesh_2:
-        x: 0.0
-        y: 0.0
-        z: 0.0
-        roll: 0.0
-        pitch: 0.0
-        yaw: 0.0
-    mesh_collision_1: ''
-    mesh_collision_2: ''
+    body_1:
+        -  
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/fixed_parts.stl
+                scale: [0.001, 0.001, 0.001]
+                color: 
+                    material_name: tree_green
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.0
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
+            
+    body_2:
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/rotating_parts.stl
+                scale: [0.001, 0.001, 0.001]
+                color: 
+                    material_name: tree_green
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.0
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
 flange_size: big
 size_in: null
 size_out: null
