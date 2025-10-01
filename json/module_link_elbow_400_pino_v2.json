@@ -1,0 +1,103 @@
+{
+  "header": {
+    "ID": "4620",
+    "name": "module_link_elbow_400_pino_v2.json",
+    "date":"2025-10-01",
+    "author": "EdoardoRomiti",
+    "affiliation": "IIT",
+    "email": "edoardo.romiti@iit.it",
+    "cost": 0,
+    "type": "link",
+    "family": "robosintesi",
+    "label": "Elbow Link 40 cm",
+    "addons": [],
+    "disabled": false
+  },
+  "bodies": [
+    {
+      "ID": "4620_link",
+      "mass": 1.102,
+      "inertia": [ 
+        [7.4651361e-03,   3.1355726e-06,  -6.5578466e-07],
+        [3.1355726e-06,   7.4781542e-03,  -5.6379122e-07],
+        [-6.5578466e-07,  -5.6379122e-07,  2.2984636e-03]
+      ],
+      "r_com": [0.0, 0.093, 0.0],
+      "visual": [
+        {
+          "type":"mesh",
+          "parameters": {
+            "file": "package://modular_resources/models/modular/meshes/alberobotics/module_link_elbow_400_pino_v2.stl",
+            "scale": [0.001, 0.001, 0.001],
+            "color": {
+              "material_name": "white"
+            }
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0],
+            [0,0,0,1]
+          ]
+        }
+      ],
+      "collision": [
+        {
+          "type":"mesh",
+          "parameters": {
+            "file": "package://modular_resources/models/modular/meshes/alberobotics/module_link_elbow_400_pino_v2.stl",
+            "scale": [0.001, 0.001, 0.001],
+            "color": {
+              "material_name": "white"
+            }
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0],
+            [0,0,0,1]
+          ]
+        }
+      ],
+      "connectors": [
+        {
+          "ID": "4620_connector_1",
+          "pose": [
+            [1, 0,  0,  0.0],
+            [0, 1,  0,  0.0],
+            [0, 0,  1,  0.0],
+            [0, 0,  0,  1]
+          ],
+          "gender": "f",
+          "type": "clamp",
+          "size": "big"
+        },
+        {
+          "ID": "4620_connector_2",
+          "pose": [
+            [1, 0,  0,  0.0],
+            [0, 0,  1,  0.42525],
+            [0, -1,  0,  -0.05175],
+            [0, 0,  0,  1]
+          ],
+          "gender": "m",
+          "type": "clamp",
+          "size": "big"
+        }
+      ],
+      "gazebo": [
+        {
+          "mu1": 0.2,
+          "mu2": 0.2,
+          "kp": 100000000.0,
+          "kd": 1.0,
+          "maxVel": 0.0,
+          "minDepth": 0.0001,
+          "material": "Gazebo/White",
+          "selfCollide": true
+        }
+      ]
+    }
+  ],
+  "joints": []
+}
