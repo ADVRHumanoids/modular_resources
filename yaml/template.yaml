@@ -22,11 +22,13 @@ kinematics:
 actuator_data:
     zero_offset: null
     type: null
+    axis: null
     lower_limit: null
     upper_limit: null
     effort: null
     velocity: null
     gear_ratio: null
+    continuous_effort: null
 dynamics:
     body_1:
         mass: null

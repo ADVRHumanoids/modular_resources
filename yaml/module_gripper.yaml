@@ -36,15 +36,15 @@ kinematics:
             n_dl: 0.0
             delta_dl: 0.0
     link:
-        a_l: 0.0
-        alpha_l: 0.0
-        p_l: 0.0
-        n_l: 0.0
-        delta_l_in: 0.0
-        delta_l_out: 0.0
+        pose: [
+            [1, 0,  0,  0.0],
+            [0, 1,  0,  0.0],
+            [0, 0,  1,  0.1985],
+            [0, 0,  0,  1]]
 actuator_data:
     zero_offset: 0.0
-    type: fixed
+    type: prismatic
+    axis: [0, -1, 0]
     lower_limit: 0.0
     upper_limit: 0.05
     effort: 20.0
@@ -77,12 +77,12 @@ dynamics:
             x: 0.0
             y: 0.0
             z: 0.0
-    body_2_fast:
-        mass: 0.0
+    body_3:
+        mass: 0.001
         inertia_tensor:
-            I_xx: 0.0
-            I_yy: 0.0
-            I_zz: 0.0
+            I_xx: 1.0e-05
+            I_yy: 1.0e-05
+            I_zz: 1.0e-05
             I_xy: 0.0
             I_xz: 0.0
             I_yz: 0.0
@@ -107,6 +107,21 @@ visual:
                 pitch: 0.0
                 yaw: 0.0
     body_2:
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/fingerup_7_raised.stl
+                scale: [0.001, 0.001, 0.001]
+                color: 
+                    material_name: white
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.0
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
+    body_3:
         -
             type: mesh
             parameters:
@@ -152,6 +167,21 @@ collision:
                 roll: 0.0
                 pitch: 0.0
                 yaw: 0.0
+    body_3:
+        -
+            type: mesh
+            parameters:
+                file: package://modular_resources/models/modular/meshes/alberobotics/simple/fingerup_7_raised.stl
+                scale: [0.001, 0.001, 0.001]
+                color: 
+                    material_name: white
+            pose:
+                x: 0.0
+                y: 0.0
+                z: 0.0
+                roll: 0.0
+                pitch: 0.0
+                yaw: 0.0
 
 flange_size: big
 size_in: null
@@ -178,3 +208,25 @@ gazebo:
         minDepth: 0.0001
         material: 'Gazebo/Grey'
         selfCollide: true
+    body_2:
+        mu1: 0.2
+        mu2: 0.2
+        kp: 1000000.0
+        kd: 1.0
+        maxVel: 0.0
+        minDepth: 0.0001
+        material: 'Gazebo/Grey'
+        selfCollide: true
+    body_3:
+        mu1: 0.2
+        mu2: 0.2
+        kp: 1000000.0
+        kd: 1.0
+        maxVel: 0.0
+        minDepth: 0.0001
+        material: 'Gazebo/Grey'
+        selfCollide: true
+xbot_gz:
+    pid:
+        p: 10.0
+        d: 1.0
