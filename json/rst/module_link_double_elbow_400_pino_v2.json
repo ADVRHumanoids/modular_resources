@@ -1,7 +1,7 @@
 {
   "header": {
     "ID": "4620",
-    "name": "rst/module_link_elbow_400_pino_v2.json",
+    "name": "rst/module_link_double_elbow_400_pino_v2.json",
     "date":"2025-10-01",
     "author": "EdoardoRomiti",
     "affiliation": "IIT",
@@ -9,34 +9,34 @@
     "cost": 0,
     "type": "link",
     "family": "robosintesi",
-    "label": "Elbow Link 40 cm",
+    "label": "Double Elbow Link 40 cm",
     "addons": [],
     "disabled": false
   },
   "bodies": [
     {
       "ID": "4620_link",
-      "mass": 1.102,
+      "mass": 1.455,
       "inertia": [ 
         [7.4651361e-03,   3.1355726e-06,  -6.5578466e-07],
         [3.1355726e-06,   7.4781542e-03,  -5.6379122e-07],
         [-6.5578466e-07,  -5.6379122e-07,  2.2984636e-03]
       ],
-      "r_com": [0.0, 0.093, 0.0],
+      "r_com": [0.0, 0.186, 0.019],
       "visual": [
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/module_link_elbow_400_pino_v2.stl",
+            "file": "package://modular_resources/models/modular/meshes/rst/module_link_double_elbow_400_pino_v2.stl",
             "scale": [0.001, 0.001, 0.001],
             "color": {
               "material_name": "white"
             }
           },
           "pose": [
-            [1,0,0,0],
+            [-1,0,0,0],
             [0,1,0,0],
-            [0,0,1,0],
+            [0,0,-1,0.045],
             [0,0,0,1]
           ]
         }
@@ -45,16 +45,16 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/module_link_elbow_400_pino_v2.stl",
+            "file": "package://modular_resources/models/modular/meshes/rst/module_link_double_elbow_400_pino_v2.stl",
             "scale": [0.001, 0.001, 0.001],
             "color": {
               "material_name": "white"
             }
           },
           "pose": [
-            [1,0,0,0],
+            [-1,0,0,0],
             [0,1,0,0],
-            [0,0,1,0],
+            [0,0,-1,0.045],
             [0,0,0,1]
           ]
         }
@@ -76,8 +76,8 @@
           "ID": "4620_connector_2",
           "pose": [
             [1, 0,  0,  0.0],
-            [0, 0,  1,  0.42525],
-            [0, -1,  0,  -0.0645],
+            [0, -1,  0,  0.400],
+            [0, 0,  -1,  0.0],
             [0, 0,  0,  1]
           ],
           "gender": "m",

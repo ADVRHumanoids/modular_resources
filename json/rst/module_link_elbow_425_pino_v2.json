@@ -1,7 +1,7 @@
 {
   "header": {
-    "ID": "4720",
-    "name": "rst/module_link_elbow_300_pino_v2.json",
+    "ID": "4620",
+    "name": "rst/module_link_elbow_400_pino_v2.json",
     "date":"2025-10-01",
     "author": "EdoardoRomiti",
     "affiliation": "IIT",
@@ -9,13 +9,13 @@
     "cost": 0,
     "type": "link",
     "family": "robosintesi",
-    "label": "Elbow Link 30 cm",
+    "label": "Elbow Link 42.5 cm",
     "addons": [],
     "disabled": false
   },
   "bodies": [
     {
-      "ID": "4720_link",
+      "ID": "4620_link",
       "mass": 1.102,
       "inertia": [ 
         [7.4651361e-03,   3.1355726e-06,  -6.5578466e-07],
@@ -27,7 +27,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/module_link_elbow_300_pino_v2.stl",
+            "file": "package://modular_resources/models/modular/meshes/rst/module_link_elbow_400_pino_v2.stl",
             "scale": [0.001, 0.001, 0.001],
             "color": {
               "material_name": "white"
@@ -45,7 +45,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/module_link_elbow_300_pino_v2.stl",
+            "file": "package://modular_resources/models/modular/meshes/rst/module_link_elbow_400_pino_v2.stl",
             "scale": [0.001, 0.001, 0.001],
             "color": {
               "material_name": "white"
@@ -61,7 +61,7 @@
       ],
       "connectors": [
         {
-          "ID": "4720_connector_1",
+          "ID": "4620_connector_1",
           "pose": [
             [1, 0,  0,  0.0],
             [0, 1,  0,  0.0],
@@ -73,10 +73,10 @@
           "size": "big"
         },
         {
-          "ID": "4720_connector_2",
+          "ID": "4620_connector_2",
           "pose": [
             [1, 0,  0,  0.0],
-            [0, 0,  1,  0.32525],
+            [0, 0,  1,  0.42525],
             [0, -1,  0,  -0.0645],
             [0, 0,  0,  1]
           ],

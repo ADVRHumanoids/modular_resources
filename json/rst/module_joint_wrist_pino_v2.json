@@ -1,7 +1,7 @@
 {
   "header": {
     "ID": "1221",
-    "name": "rst/module_joint_elbow_pino_v2.json",
+    "name": "rst/module_joint_wrist_pino_v2.json",
     "date":"2025-10-01",
     "author": "EdoardoRomiti",
     "affiliation": "IIT",
@@ -9,7 +9,7 @@
     "cost": 0,
     "type": "joint",
     "family": "robosintesi",
-    "label": "Elbow Joint",
+    "label": "Wrist Joint",
     "addons": [],
     "disabled": false
   },
@@ -27,7 +27,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/module_joint_elbow_pino_v2.stl",
+            "file": "package://modular_resources/models/modular/meshes/rst/module_joint_wrist_pino_v2_proximal.stl",
             "scale": [0.001, 0.001, 0.001],
             "color": {
               "material_name": "concert_blue",
@@ -46,7 +46,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/module_joint_elbow_pino_v2.stl",
+            "file": "package://modular_resources/models/modular/meshes/rst/module_joint_wrist_pino_v2_proximal.stl",
             "scale": [0.001, 0.001, 0.001]
           },
           "pose": [
@@ -93,6 +93,40 @@
         [6.2736548e-06,   3.1199793e-04,  4.2223026e-03]
       ],
       "r_com": [0.0,  -0.028683616,  0.017545874],
+      "visual": [
+        {
+          "type":"mesh",
+          "parameters": {
+            "file": "package://modular_resources/models/modular/meshes/rst/module_joint_wrist_pino_v2_distal.stl",
+            "scale": [0.001, 0.001, 0.001],
+            "color": {
+              "material_name": "concert_blue",
+              "rgba": [0.149, 0.259, 0.51, 1]
+            }
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0],
+            [0,0,0,1]
+          ]
+        }
+      ],
+      "collision": [
+        {
+          "type":"mesh",
+          "parameters": {
+            "file": "package://modular_resources/models/modular/meshes/rst/module_joint_wrist_pino_v2_distal.stl",
+            "scale": [0.001, 0.001, 0.001]
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0],
+            [0,0,0,1]
+          ]
+        }
+      ],
       "connectors": [
         {
           "ID": "12_output",
@@ -130,14 +164,14 @@
       "passive": "false",
       "pose_parent": [
         [1.0,   0.0,    0.0,    0.0     ],
-        [0.0,   0.0,    -1.0,    -0.0645   ],
-        [0.0,   1.0,   0.0,    0.06475  ],
+        [0.0,   0.0,    -1.0,    -0.04  ],
+        [0.0,   1.0,   0.0,    0.12625  ],
         [0.0,   0.0,    0.0,    1.0     ]
       ],
       "pose_child": [
         [1.0,  0.0,    0.0,    0.0     ],
-        [0.0,   1.0,    0.0,   0.0  ],
-        [0.0,   0.0,   1.0,    0.0  ],
+        [0.0,   0.0,    1.0,   0.124  ],
+        [0.0,   -1.0,   0.0,    -0.04  ],
         [0.0,   0.0,    0.0,    1.0     ]
       ],
       "limits": {

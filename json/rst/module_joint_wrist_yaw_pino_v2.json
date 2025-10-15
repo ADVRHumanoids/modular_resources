@@ -1,7 +1,7 @@
 {
   "header": {
     "ID": "1221",
-    "name": "rst/module_joint_elbow_pino_v2.json",
+    "name": "rst/module_joint_wrist_yaw_pino_v2.json",
     "date":"2025-10-01",
     "author": "EdoardoRomiti",
     "affiliation": "IIT",
@@ -9,7 +9,7 @@
     "cost": 0,
     "type": "joint",
     "family": "robosintesi",
-    "label": "Elbow Joint",
+    "label": "Wrist Joint",
     "addons": [],
     "disabled": false
   },
@@ -23,40 +23,6 @@
         [2.7564183e-05, -1.8208015e-03,  1.2353539e-02]
       ],
       "r_com": [-0.0011761517, 0.041312534, 0.075772157],
-      "visual": [
-        {
-          "type":"mesh",
-          "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/module_joint_elbow_pino_v2.stl",
-            "scale": [0.001, 0.001, 0.001],
-            "color": {
-              "material_name": "concert_blue",
-              "rgba": [0.149, 0.259, 0.51, 1]
-            }
-          },
-          "pose": [
-            [1,0,0,0],
-            [0,1,0,0],
-            [0,0,1,0],
-            [0,0,0,1]
-          ]
-        }
-      ],
-      "collision": [
-        {
-          "type":"mesh",
-          "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/module_joint_elbow_pino_v2.stl",
-            "scale": [0.001, 0.001, 0.001]
-          },
-          "pose": [
-            [1,0,0,0],
-            [0,1,0,0],
-            [0,0,1,0],
-            [0,0,0,1]
-          ]
-        }
-      ],
       "connectors": [
         {
           "ID": "12_input",
@@ -130,14 +96,14 @@
       "passive": "false",
       "pose_parent": [
         [1.0,   0.0,    0.0,    0.0     ],
-        [0.0,   0.0,    -1.0,    -0.0645   ],
-        [0.0,   1.0,   0.0,    0.06475  ],
+        [0.0,   1.0,    0.0,    0.0     ],
+        [0.0,   0.0,    1.0,    0.0],
         [0.0,   0.0,    0.0,    1.0     ]
       ],
       "pose_child": [
-        [1.0,  0.0,    0.0,    0.0     ],
-        [0.0,   1.0,    0.0,   0.0  ],
-        [0.0,   0.0,   1.0,    0.0  ],
+        [1.0,   0.0,    0.0,    0.0     ],
+        [0.0,   1.0,    0.0,    0.0     ],
+        [0.0,   0.0,    1.0,    0.0     ],
         [0.0,   0.0,    0.0,    1.0     ]
       ],
       "limits": {
