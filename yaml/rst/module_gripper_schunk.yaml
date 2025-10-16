@@ -96,7 +96,7 @@ visual:
         -
             type: mesh
             parameters:
-                file: package://modular_resources/models/modular/meshes/rst/SCHUNK-EGK-25-EC-M-B_gripper.stl
+                file: package://modular_resources/models/modular/meshes/rst/SCHUNK_EGK_25_EC_M_B_gripper.stl
                 scale: [0.001, 0.001, 0.001]
                 color: 
                     material_name: grey
@@ -111,7 +111,7 @@ visual:
         -
             type: mesh
             parameters:
-                file: package://modular_resources/models/modular/meshes/rst/SCHUNK-EGK-25-EC-M-B_left_finger.stl
+                file: package://modular_resources/models/modular/meshes/rst/SCHUNK_EGK_25_EC_M_B_left_finger.stl
                 scale: [0.001, 0.001, 0.001]
                 color: 
                     material_name: grey
@@ -126,7 +126,7 @@ visual:
         -
             type: mesh
             parameters:
-                file: package://modular_resources/models/modular/meshes/rst/SCHUNK-EGK-25-EC-M-B_right_finger.stl
+                file: package://modular_resources/models/modular/meshes/rst/SCHUNK_EGK_25_EC_M_B_right_finger.stl
                 scale: [0.001, 0.001, 0.001]
                 color: 
                     material_name: grey
@@ -142,7 +142,7 @@ collision:
         -
             type: mesh
             parameters:
-                file: package://modular_resources/models/modular/meshes/rst/SCHUNK-EGK-25-EC-M-B_gripper.stl
+                file: package://modular_resources/models/modular/meshes/rst/simple/SCHUNK_EGK_25_EC_M_B_gripper.stl
                 scale: [0.001, 0.001, 0.001]
             pose:
                 x: 0.0
@@ -155,7 +155,7 @@ collision:
         -
             type: mesh
             parameters:
-                file: package://modular_resources/models/modular/meshes/rst/SCHUNK-EGK-25-EC-M-B_left_finger.stl
+                file: package://modular_resources/models/modular/meshes/rst/SCHUNK_EGK_25_EC_M_B_left_finger.stl
                 scale: [0.001, 0.001, 0.001]
 
             pose:
@@ -169,7 +169,7 @@ collision:
         -
             type: mesh
             parameters:
-                file: package://modular_resources/models/modular/meshes/rst/SCHUNK-EGK-25-EC-M-B_right_finger.stl
+                file: package://modular_resources/models/modular/meshes/rst/SCHUNK_EGK_25_EC_M_B_right_finger.stl
                 scale: [0.001, 0.001, 0.001]
             pose:
                 x: 0.0
