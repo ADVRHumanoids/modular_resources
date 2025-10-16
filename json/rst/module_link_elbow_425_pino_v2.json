@@ -27,7 +27,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/module_link_elbow_400_pino_v2.stl",
+            "file": "package://modular_resources/models/modular/meshes/rst/module_link_elbow_425_pino_v2.stl",
             "scale": [0.001, 0.001, 0.001],
             "color": {
               "material_name": "white"
@@ -45,7 +45,23 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/module_link_elbow_400_pino_v2.stl",
+            "file": "package://modular_resources/models/modular/meshes/rst/module_link_elbow_425_pino_v2_part_0.stl",
+            "scale": [0.001, 0.001, 0.001],
+            "color": {
+              "material_name": "white"
+            }
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0],
+            [0,0,0,1]
+          ]
+        },
+        {
+          "type":"mesh",
+          "parameters": {
+            "file": "package://modular_resources/models/modular/meshes/rst/module_link_elbow_425_pino_v2_part_1.stl",
             "scale": [0.001, 0.001, 0.001],
             "color": {
               "material_name": "white"

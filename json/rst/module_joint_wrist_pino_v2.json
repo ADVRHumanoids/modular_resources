@@ -46,7 +46,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/module_joint_wrist_pino_v2_proximal.stl",
+            "file": "package://modular_resources/models/modular/meshes/rst/simple/module_joint_wrist_pino_v2_proximal.stl",
             "scale": [0.001, 0.001, 0.001]
           },
           "pose": [

@@ -45,7 +45,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/module_link_double_elbow_400_pino_v2.stl",
+            "file": "package://modular_resources/models/modular/meshes/rst/simple/module_link_double_elbow_400_pino_v2.stl",
             "scale": [0.001, 0.001, 0.001],
             "color": {
               "material_name": "white"
