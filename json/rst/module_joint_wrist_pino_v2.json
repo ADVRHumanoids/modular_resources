@@ -170,13 +170,13 @@
       ],
       "pose_child": [
         [1.0,  0.0,    0.0,    0.0     ],
-        [0.0,   0.0,    1.0,   0.124  ],
+        [0.0,   0.0,    1.0,   0.132849  ],
         [0.0,   -1.0,   0.0,    -0.04  ],
         [0.0,   0.0,    0.0,    1.0     ]
       ],
       "limits": {
-        "positionUpper": 2.75,
-        "positionLower": -2.75,
+        "positionUpper": 2.26,
+        "positionLower": -2.26,
         "peak_torque": 314.0,
         "velocity": 2.85,
         "acceleration": null,
