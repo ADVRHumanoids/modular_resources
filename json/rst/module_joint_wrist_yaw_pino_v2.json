@@ -107,8 +107,8 @@
         [0.0,   0.0,    0.0,    1.0     ]
       ],
       "limits": {
-        "positionUpper": 2.75,
-        "positionLower": -2.75,
+        "positionUpper": 2.96,
+        "positionLower": -2.96,
         "peak_torque": 314.0,
         "velocity": 2.85,
         "acceleration": null,
