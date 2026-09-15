@@ -1,0 +1,103 @@
+{
+  "header": {
+    "ID": "6321",
+    "name": "rst/module_base_link_pino_v2.json",
+    "date":"2026-09-11",
+    "author": "EdoardoRomiti",
+    "affiliation": "IIT",
+    "email": "edoardo.romiti@iit.it",
+    "cost": 0,
+    "type": "link",
+    "family": "robosintesi",
+    "label": "Base Link Module",
+    "addons": [],
+    "disabled": false
+  },
+  "bodies": [
+    {
+      "ID": "6321_link",
+      "mass": 5.0,
+      "inertia": [ 
+        [1e-03,   1e-06,  -1e-06],
+        [1e-06,   1e-03,  -1e-06],
+        [-1e-06,  -1e-06,  1e-03]
+      ],
+      "r_com": [0.0, 0.0, 0.028],
+      "visual": [
+        {
+          "type":"mesh",
+          "parameters": {
+            "file": "package://modular_resources/models/modular/meshes/rst/module_base_link_pino_v2.stl",
+            "scale": [0.001, 0.001, 0.001],
+            "color": {
+              "material_name": "white"
+            }
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0.0],
+            [0,0,0,1]
+          ]
+        }
+      ],
+      "collision": [
+        {
+          "type":"mesh",
+          "parameters": {
+            "file": "package://modular_resources/models/modular/meshes/rst/simple/module_base_link_pino_v2.stl",
+            "scale": [0.001, 0.001, 0.001],
+            "color": {
+              "material_name": "white"
+            }
+          },
+          "pose": [
+            [1,0,0,0],
+            [0,1,0,0],
+            [0,0,1,0.0],
+            [0,0,0,1]
+          ]
+        }
+      ],
+      "connectors": [
+        {
+          "ID": "6321_connector_1",
+          "pose": [
+            [1, 0,  0,  0.0],
+            [0, 1,  0,  0.0],
+            [0, 0,  1,  0.0],
+            [0, 0,  0,  1]
+          ],
+          "gender": "f",
+          "type": "clamp",
+          "size": "big"
+        },
+        {
+          "ID": "6321_connector_2",
+          "pose": [
+            [1, 0,  0,  0.0],
+            [0, 1,  0,  0.0],
+            [0, 0,  1,  0.0565],
+            [0, 0,  0,  1]
+          ],
+          "gender": "m",
+          "type": "clamp",
+          "size": "big"
+        }
+      ],
+      "gazebo": [
+        {
+          "mu1": 0.2,
+          "mu2": 0.2,
+          "kp": 100000000.0,
+          "kd": 1.0,
+          "maxVel": 0.0,
+          "minDepth": 0.0001,
+          "material": "Gazebo/White",
+          "selfCollide": true
+        }
+      ]
+    }
+  ],
+  "joints": []
+}
