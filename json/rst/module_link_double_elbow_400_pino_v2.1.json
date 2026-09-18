@@ -1,33 +1,33 @@
 {
   "header": {
-    "ID": "6321",
-    "name": "rst/module_base_link_pino_v2.json",
-    "date":"2026-09-11",
+    "ID": "4620",
+    "name": "rst/module_link_double_elbow_400_pino_v2.1.json",
+    "date":"2025-10-01",
     "author": "EdoardoRomiti",
     "affiliation": "IIT",
     "email": "edoardo.romiti@iit.it",
     "cost": 0,
     "type": "link",
     "family": "robosintesi",
-    "label": "Base Link Module",
+    "label": "Double Elbow Link 40 cm",
     "addons": [],
     "disabled": false
   },
   "bodies": [
     {
-      "ID": "6321_link",
-      "mass": 5.0,
-      "inertia": [ 
-        [1e-03,   1e-06,  -1e-06],
-        [1e-06,   1e-03,  -1e-06],
-        [-1e-06,  -1e-06,  1e-03]
+      "ID": "4620_link",
+      "mass": 2.0115546,
+      "inertia": [
+        [4.7233547e-02, -2.1159962e-07, -1.4115679e-08],
+        [-2.1159962e-07, 2.7411316e-03, -1.4176760e-04],
+        [-1.4115679e-08, -1.4176760e-04, 4.9082150e-02]
       ],
-      "r_com": [0.0, 0.0, 0.028],
+      "r_com": [-3.0150521e-07, 1.9605735e-01, 2.3528799e-02],
       "visual": [
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/module_base_link_pino_v2.stl",
+            "file": "package://modular_resources/models/modular/meshes/rst/module_link_double_elbow_400_pino_v2.1.stl",
             "scale": [0.001, 0.001, 0.001],
             "color": {
               "material_name": "white"
@@ -45,7 +45,7 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/simple/module_base_link_pino_v2.stl",
+            "file": "package://modular_resources/models/modular/meshes/rst/simple/module_link_double_elbow_400_pino_v2.1.stl",
             "scale": [0.001, 0.001, 0.001],
             "color": {
               "material_name": "white"
@@ -61,7 +61,7 @@
       ],
       "connectors": [
         {
-          "ID": "6321_connector_1",
+          "ID": "4620_connector_1",
           "pose": [
             [1, 0,  0,  0.0],
             [0, 1,  0,  0.0],
@@ -73,11 +73,11 @@
           "size": "big"
         },
         {
-          "ID": "6321_connector_2",
+          "ID": "4620_connector_2",
           "pose": [
             [1, 0,  0,  0.0],
-            [0, 1,  0,  0.0],
-            [0, 0,  1,  0.0565],
+            [0, -1,  0,  -0.400],
+            [0, 0,  -1,  0.0],
             [0, 0,  0,  1]
           ],
           "gender": "m",

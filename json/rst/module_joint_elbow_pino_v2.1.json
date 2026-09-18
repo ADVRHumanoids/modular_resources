@@ -1,7 +1,7 @@
 {
   "header": {
     "ID": "1221",
-    "name": "rst/module_joint_wrist_pino_v2.json",
+    "name": "rst/module_joint_elbow_pino_v2.1.json",
     "date":"2025-10-01",
     "author": "EdoardoRomiti",
     "affiliation": "IIT",
@@ -9,34 +9,33 @@
     "cost": 0,
     "type": "joint",
     "family": "robosintesi",
-    "label": "Wrist Joint",
+    "label": "Elbow Joint",
     "addons": [],
     "disabled": false
   },
   "bodies": [
     {
-      "ID": "12_proximal",
-      "mass": 3.3057881,
-      "inertia": [ 
-        [1.4381278e-02, -8.2901107e-05,  2.7564183e-05],
-        [-8.2901107e-05,  7.8716547e-03, -1.8208015e-03],
-        [2.7564183e-05, -1.8208015e-03,  1.2353539e-02]
+      "ID": "1221_proximal",
+      "mass": 2.3231862,
+      "inertia": [
+        [7.0000893e-03, 5.1492171e-05, 9.3908238e-07],
+        [5.1492171e-05, 4.5547239e-03, 1.3166120e-04],
+        [9.3908238e-07, 1.3166120e-04, 6.0649991e-03]
       ],
-      "r_com": [-0.0011761517, 0.041312534, 0.075772157],
+      "r_com": [-4.1938331e-04, -3.5618884e-03, 6.5668329e-02],
       "visual": [
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/module_joint_wrist_pino_v2_proximal.stl",
+            "file": "package://modular_resources/models/modular/meshes/rst/module_joint_elbow_pino_v2.1.stl",
             "scale": [0.001, 0.001, 0.001],
             "color": {
-              "material_name": "concert_blue",
-              "rgba": [0.149, 0.259, 0.51, 1]
+              "material_name": "white"
             }
           },
           "pose": [
-            [1,0,0,0],
-            [0,1,0,0],
+            [-1,0,0,0],
+            [0,-1,0,0],
             [0,0,1,0],
             [0,0,0,1]
           ]
@@ -46,12 +45,12 @@
         {
           "type":"mesh",
           "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/simple/module_joint_wrist_pino_v2_proximal.stl",
+            "file": "package://modular_resources/models/modular/meshes/rst/simple/module_joint_elbow_pino_v2.1.stl",
             "scale": [0.001, 0.001, 0.001]
           },
           "pose": [
-            [1,0,0,0],
-            [0,1,0,0],
+            [-1,0,0,0],
+            [0,-1,0,0],
             [0,0,1,0],
             [0,0,0,1]
           ]
@@ -59,7 +58,7 @@
       ],
       "connectors": [
         {
-          "ID": "12_input",
+          "ID": "1221_input",
           "pose": [
             [1,0,0,0],
             [0,1,0,0],
@@ -85,51 +84,17 @@
       ]
     },
     {
-      "ID": "12_distal",
-      "mass": 1.1588784,
+      "ID": "1221_distal",
+      "mass": 0.2,
       "inertia": [
-        [3.4928397e-03,   -1.0903971e-05, 6.2736548e-06],
-        [-1.0903971e-05,  2.9687575e-03,  3.1199793e-04],
-        [6.2736548e-06,   3.1199793e-04,  4.2223026e-03]
+        [6.1666667e-05, 0, 0],
+        [0, 6.1666667e-05, 0],
+        [0, 0, 4.0000000e-05]
       ],
-      "r_com": [0.0,  -0.028683616,  0.017545874],
-      "visual": [
-        {
-          "type":"mesh",
-          "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/module_joint_wrist_pino_v2_distal.stl",
-            "scale": [0.001, 0.001, 0.001],
-            "color": {
-              "material_name": "concert_blue",
-              "rgba": [0.149, 0.259, 0.51, 1]
-            }
-          },
-          "pose": [
-            [1,0,0,0],
-            [0,1,0,0],
-            [0,0,1,0],
-            [0,0,0,1]
-          ]
-        }
-      ],
-      "collision": [
-        {
-          "type":"mesh",
-          "parameters": {
-            "file": "package://modular_resources/models/modular/meshes/rst/simple/module_joint_wrist_pino_v2_distal.stl",
-            "scale": [0.001, 0.001, 0.001]
-          },
-          "pose": [
-            [1,0,0,0],
-            [0,1,0,0],
-            [0,0,1,0],
-            [0,0,0,1]
-          ]
-        }
-      ],
+      "r_com": [0.0, 0.0, -0.025],
       "connectors": [
         {
-          "ID": "12_output",
+          "ID": "1221_output",
           "pose": [
             [1,0,0,0],
             [0,1,0,0],
@@ -157,30 +122,30 @@
   ],
   "joints": [
     {
-      "ID": "12_joint",
-      "parent": "12_proximal",
-      "child": "12_distal",
+      "ID": "1221_joint",
+      "parent": "1221_proximal",
+      "child": "1221_distal",
       "type": "revolute",
       "passive": "false",
       "pose_parent": [
         [1.0,   0.0,    0.0,    0.0     ],
-        [0.0,   0.0,    -1.0,    -0.04  ],
-        [0.0,   1.0,   0.0,    0.12625  ],
+        [0.0,   0.0,    1.0,    0.0645   ],
+        [0.0,   -1.0,   0.0,    0.075  ],
         [0.0,   0.0,    0.0,    1.0     ]
       ],
       "pose_child": [
         [1.0,  0.0,    0.0,    0.0     ],
-        [0.0,   0.0,    1.0,   0.132849  ],
-        [0.0,   -1.0,   0.0,    -0.04  ],
+        [0.0,   1.0,    0.0,   0.0  ],
+        [0.0,   0.0,   1.0,    0.0  ],
         [0.0,   0.0,    0.0,    1.0     ]
       ],
       "limits": {
-        "positionUpper": 2.26,
-        "positionLower": -2.26,
-        "peak_torque": 314.0,
-        "velocity": 2.85,
+        "positionUpper": 2.75,
+        "positionLower": -2.75,
+        "peak_torque": 240.0,
+        "velocity": 3.52,
         "acceleration": null,
-        "continuous_torque": 120.0
+        "continuous_torque": 100.0
       },
       "gear_ratio": 120.0,
       "motor_inertia": 0.0,
